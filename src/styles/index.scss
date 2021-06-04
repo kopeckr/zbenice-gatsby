@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&family=Open+Sans:wght@400;700&family=Pinyon+Script&display=swap');
+
+:root {
+  --gold: #ad9d7e; /* barva loga + pozadi na fotkach, cary na timeline*/
+  --darkblue: #0b1734; /* barva paticky, hlavicky, buttonu, kulicek na timeline*/
+  --black: #000;
+  --white: #fff;
+  /* dark mode colors*/
+  --verydarkgrey: #2e2f33;
+  --darkerwhite: #e0e0e0;
+  --verydarkblue: #0c0d13;
+  /*form validation */
+  --darkred: #be5944;
+}
+
+/* font-family: 'EB Garamond', serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Pinyon Script', cursive; */
+
+html {
+  font-family: 'Open Sans', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+:focus {
+  outline: 2px dotted var(--darkred);
+}
+
+ul {
+  padding-left: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--white);
+}

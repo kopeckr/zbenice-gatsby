@@ -1,10 +1,17 @@
-import * as React from "react"
+import * as React from 'react';
+import Header from '../components/Header';
+import MainNav from '../components/MainNav';
+import Footer from '../components/Footer';
 
-// markup
 const ContactPage = () => {
   return (
-   <div>kontakt</div>
-  )
-}
+    <>
+      <Header />
+      <MainNav />
+      <div>contact page</div>
+      <Footer />
+    </>
+  );
+};
 
-export default ContactPage
+export default ContactPage;
