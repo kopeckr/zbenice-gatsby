@@ -1,5 +1,5 @@
 import React from 'react';
-import IconSun from '../../images/phone-call.svg';
+import IconSun from '../../svg/icon-sun.svg';
 import logo from '../../images/Zbenice_Gold.png';
 import { Link } from 'gatsby';
 
