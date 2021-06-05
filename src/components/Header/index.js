@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import IconSun from '../../svg/icon-sun.svg';
 import logo from '../../images/zbenice-logo.png';
 import { Link } from 'gatsby';
 
 const Header = () => {
+  const [open, setOpen] = useState(false);
+
   return (
     <>
       <header>
@@ -30,7 +32,14 @@ const Header = () => {
           <div className="header__hamburger-items">
             <span className="header__hamburger-text">Menu</span>
             <button
-              className="header__hamburger--btn"
+              className={
+                open === false
+                  ? 'header__hamburger--btn'
+                  : 'header__hamburger--btn header__hamburger--btn--opened'
+              }
+              onClick={() => {
+                setOpen(!open);
+              }}
               type="button"
               aria-label="open hamburger menu"
               aria-expanded="false"
@@ -40,7 +49,13 @@ const Header = () => {
               <span></span>
             </button>
           </div>
-          <ul className="header__nav--list">
+          <ul
+            className={
+              open === false
+                ? 'header__nav--list header__nav--closed'
+                : 'header__nav--list'
+            }
+          >
             <li className="header__nav--item">
               <Link className="header__nav--link" to="/">
                 Domů
