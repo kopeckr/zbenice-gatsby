@@ -3,13 +3,15 @@ import { Link } from 'gatsby';
 import logo from '../../images/zbenice-logo.png';
 import IconPhone from '../../svg/phone-call.svg';
 import IconEmail from '../../svg/icon-email.svg';
+import someImg from '../../images/zbenice-6.jpg';
 
 const Footer = () => {
   return (
     <>
       <footer>
         <div className="footer__details">
-          <img className="footer__logo" src={logo} alt="logo zámku Zbenice" />
+          <img className="footer__logo" src={logo} alt="logo zámku Zbenice"/>
+          <img className="footer__logo" src={someImg} alt="logo zámku Zbenice"/>
           <div className="footer__address">
             <p>
               Adresa

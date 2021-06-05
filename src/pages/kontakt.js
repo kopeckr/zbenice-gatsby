@@ -6,7 +6,7 @@ const ContactPage = () => {
   return (
     <>
       <Header />
-      <div>contact page</div>
+      <h1>Kontakt</h1>
       <Footer />
     </>
   );
