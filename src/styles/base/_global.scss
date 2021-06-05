@@ -12,3 +12,18 @@ body {
 a {
   color: $color-white;
 }
+
+h1 {
+  font-family: $font-menu;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: $color-black;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+h2 {
+  font-weight: normal;
+  font-size: 1.25rem;
+  padding-left: 0.315rem;
+}
