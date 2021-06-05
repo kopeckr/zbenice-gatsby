@@ -8,7 +8,6 @@ const Main = () => {
         <img
           className="main__photo"
           src={uvodniFotka}
-          // src="../../images/Zbenice_Desktop_01.jpg"
           alt="Fotka zámku Zbenice"
         />
 

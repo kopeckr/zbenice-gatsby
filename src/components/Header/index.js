@@ -1,6 +1,6 @@
 import React from 'react';
 import IconSun from '../../svg/icon-sun.svg';
-import logo from '../../images/Zbenice_Gold.png';
+import logo from '../../images/zbenice-logo.png';
 import { Link } from 'gatsby';
 
 const Header = () => {
@@ -47,12 +47,12 @@ const Header = () => {
               </Link>
             </li>
             <li className="header__nav--item">
-              <Link className="header__nav--link" to="/aboutcastle">
+              <Link className="header__nav--link" to="/o-zamku">
                 O zámku
               </Link>
             </li>
             <li className="header__nav--item">
-              <Link className="header__nav--link" to="#">
+              <Link className="header__nav--link" to="/">
                 Fotogalerie
               </Link>
             </li>
