@@ -7,6 +7,9 @@ import Main from '../components/Main';
 const IndexPage = () => {
   return (
     <>
+      <a href="#main" class="skip-links">
+        Přeskočit na obsah
+      </a>
       <Header />
       {/* <MainNav /> */}
       <Main />
