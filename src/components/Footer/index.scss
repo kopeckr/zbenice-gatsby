@@ -1,14 +1,32 @@
 footer {
-  background-color: var(--darkblue);
-  color: var(--white);
+  background-color: $color-darkblue;
+  color: $color-white;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 1.25rem;
+
+  @include xl {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+  }
 }
 
-.footer__details,
+.footer__details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include xl {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: repeat(2, auto);
+    grid-row: 1 / 3;
+  }
+}
+
 .footer__copyrights {
   display: flex;
   flex-direction: column;
@@ -18,21 +36,41 @@ footer {
 .footer__logo {
   display: block;
   width: min(35vw, 12.5rem);
+
+  @include xl {
+    grid-row: 1 / 3;
+    margin-right: 1rem;
+  }
 }
 
+.footer__address {
+  text-align: center;
+
+  @include xl {
+    text-align: left;
+  }
+}
 /* contacts */
 
 .footer__contacts {
   padding: 1.5rem 0;
-}
-.footer__address {
-  text-align: center;
-}
 
-.footer__contacts--phone,
-.footer__contacts--email {
-  display: flex;
-  align-items: center;
+  @include xl {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    padding: 0;
+  }
+
+  &--email {
+    display: flex;
+    align-items: center
+  }
+
+  &--phone {
+    display: flex;
+    align-items: center;
+    padding-bottom: 0.5rem;
+  }
 }
 
 .footer__phone--icon,
@@ -45,16 +83,11 @@ footer {
 .footer__link--email {
   border-bottom: 1px solid transparent;
   transition: all ease-in-out 250ms;
-}
 
-.footer__link--phone:hover,
-.footer__link--email:hover {
-  border-bottom: 1px solid var(--white);
-  transition: all ease-in-out 250ms;
-}
-
-.footer__contacts--phone {
-  padding-bottom: 0.5rem;
+  &:hover {
+    border-bottom: 1px solid $color-white;
+    transition: all ease-in-out 250ms;
+  }
 }
 
 /*  navigation */
@@ -62,30 +95,48 @@ footer {
 .footer__nav {
   padding: 1.5rem 0;
   text-align: center;
+
+  @include xl {
+    align-self: start;
+    padding: 1.5rem 1rem;
+  }
+}
+
+.footer__list {
+  @include xl {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
 }
 
 .footer__item {
   margin-bottom: 1.5rem;
+
+  @include xl {
+    margin-bottom: 0;
+    margin-left: 1rem;
+  }
 }
 
 .footer__link {
   position: relative;
-}
 
-.footer__link::after {
-  content: '';
-  position: absolute;
-  top: 25px;
-  left: 0;
-  width: 100%;
-  height: 1px;
-  transform: scaleX(0);
-  background-color: #ffffff;
-  transition: all ease-in-out 250ms;
-}
+  &::after {
+    content: '';
+    position: absolute;
+    top: 25px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    transform: scaleX(0);
+    background-color: $color-white;
+    transition: all ease-in-out 250ms;
+  }
 
-.footer__link:hover::after {
-  transform: scaleX(1);
+  &:hover::after {
+      transform: scaleX(1);
+  }
 }
 
 /* copyrights */
@@ -94,61 +145,8 @@ footer {
   max-width: 40ch;
   text-align: center;
   font-size: 0.6rem;
-}
 
-.footer__copyrights--link {
-  text-align: center;
-  font-size: 0.6rem;
-}
-
-/*  footer desktop version  */
-
-@media screen and (min-width: 52.5em) {
-  footer {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, auto);
-  }
-
-  .footer__logo {
-    grid-row: 1 / 3;
-    margin-right: 1rem;
-  }
-
-  .footer__details {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    grid-template-rows: repeat(2, auto);
-    grid-row: 1 / 3;
-  }
-
-  .footer__contacts {
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
-    padding: 0;
-  }
-
-  .footer__address {
-    text-align: left;
-  }
-
-  .footer__nav {
-    align-self: start;
-    padding: 1.5rem 1rem;
-  }
-
-  .footer__item {
-    margin-bottom: 0;
-    margin-left: 1rem;
-  }
-
-  .footer__list {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-  }
-
-  .footer__copyrights {
+  @include xl {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-column: 2 / 3;
@@ -157,15 +155,23 @@ footer {
     text-align: left;
   }
 
-  .footer__copyrights--text {
-    grid-column: 3 / 5;
-    margin: 0;
+  &--link {
+    text-align: center;
+    font-size: 0.6rem;
+
+    @include xl {
+      grid-column: 1 / 3;
+      grid-row: 1 / 2;
+      text-align: left;
+      align-self: end;
+    }
   }
 
-  .footer__copyrights--link {
-    grid-column: 1 / 3;
-    grid-row: 1 / 2;
-    text-align: left;
-    align-self: end;
+  &--text {
+    @include xl {
+      grid-column: 3 / 5;
+      margin: 0;
+    }
   }
 }
+
