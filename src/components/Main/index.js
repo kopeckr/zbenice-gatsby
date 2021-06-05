@@ -1,5 +1,9 @@
 import React from 'react';
-import uvodniFotka from '../../images/Zbenice_Desktop_01.jpg';
+import uvodniFotka from '../../images/zbenice-32.jpg';
+import fotka1 from '../../images/zbenice-55.jpg';
+import fotka2 from '../../images/zbenice-42.jpg';
+import fotka3 from '../../images/zbenice-52.jpg';
+import fotkaCeska from '../../images/zbenice-ceska.jpg';
 
 const Main = () => {
   return (
@@ -14,7 +18,7 @@ const Main = () => {
         <div className="main__section">
           <img
             className="main__photo-ceska"
-            src="img/Ceska-Desktop.jpg"
+            src={fotkaCeska}
             alt="Fotka pana Češky"
           />
 
@@ -47,17 +51,17 @@ const Main = () => {
           <div className="main__all-photos">
             <img
               className="main__photos"
-              src="img/zbenice-54.jpg"
+              src={fotka1}
               alt="Fotka zámku Zbenice"
             />
             <img
               className="main__photos"
-              src="img/zbenice-42.jpg"
+              src={fotka2}
               alt="Fotka erbu zámku Zbenice"
             />
             <img
               className="main__photos"
-              src="img/zbenice-52.jpg"
+              src={fotka3}
               alt="Fotka zámku Zbenice"
             />
           </div>

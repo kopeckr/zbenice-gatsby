@@ -1,11 +1,10 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import fotkaZbenice from '../../images/zbenice-stare-1.jpg';
 
-(function () {
-  'use strict';
+const AboutCastle = () => {
+  const [items, setItems] = useState([]);
 
-  const items = document.querySelectorAll('.timeline li');
-
-  function isElementInViewport(el) {
+  const isElementInViewport = (el) => {
     const rect = el.getBoundingClientRect();
     return (
       rect.top >= 0 &&
@@ -14,24 +13,39 @@ import React from 'react';
         (window.innerHeight || document.documentElement.clientHeight) &&
       rect.right <= (window.innerWidth || document.documentElement.clientWidth)
     );
-  }
+  };
 
-  function callbackFunc() {
+  const callbackFunc = () => {
     for (let i = 0; i < items.length; i++) {
       if (isElementInViewport(items[i])) {
         items[i].classList.add('in-view');
       }
     }
-  }
+  };
 
-  window.addEventListener('load', callbackFunc);
-  window.addEventListener('resize', callbackFunc);
-  window.addEventListener('scroll', callbackFunc);
-})();
+  useEffect(() => {
+    console.log('hello');
 
-const AboutCastle = () => {
+    setItems(document.querySelectorAll('.timeline li'));
+  }, []);
+
+  useEffect(() => {
+    if (items.length) {
+      console.log(items);
+      window.addEventListener('resize', callbackFunc);
+      window.addEventListener('scroll', callbackFunc);
+    }
+  }, [items]);
+
   return (
     <>
+      <section className="intro">
+        <div className="intro__container">
+          <h3 className="intro__headline">O zámku</h3>
+          <img className="intro__photo" src={fotkaZbenice}></img>
+        </div>
+      </section>
+
       <section className="intro">
         <div className="intro__container">
           <h3 className="intro__headline">Jak běžel čas na zámku Zbenice</h3>
