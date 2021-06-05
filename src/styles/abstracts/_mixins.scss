@@ -1,0 +1,9 @@
+// media query
+
+$xl: 52.5em;
+
+@mixin xl {
+  @media screen and(min-width: $xl) {
+    @content;
+  }
+}
