@@ -1,18 +1,16 @@
 import * as React from 'react';
 import Header from '../components/Header';
-// import MainNav from '../components/MainNav';
 import Footer from '../components/Footer';
-import Main from '../components/Main';
+import AboutCastle from '../components/AboutCastle';
 
-const IndexPage = () => {
+const MainPage = () => {
   return (
     <>
       <Header />
-      {/* <MainNav /> */}
-      <Main />
+      <AboutCastle />
       <Footer />
     </>
   );
 };
 
-export default IndexPage;
+export default MainPage;

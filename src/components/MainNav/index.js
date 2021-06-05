@@ -1,16 +1,19 @@
-import React from "react";
-import {Link} from "gatsby"
+import React from 'react';
+import { Link } from 'gatsby';
 
- const MainNav = () => {
-
+const MainNav = () => {
   return (
     <>
-    <ul> 
-      <li> <Link to="/">Homepage</Link></li>
-      <li> <Link to="/kontakt">Kontakt</Link></li>
-    </ul>
+      <ul>
+        <li>
+          <Link to="/">Homepage</Link>
+        </li>
+        <li>
+          <Link to="/kontakt">Kontakt</Link>{' '}
+        </li>
+      </ul>
     </>
-  )
-}
+  );
+};
 
-export default MainNav
+export default MainNav;

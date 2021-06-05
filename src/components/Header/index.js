@@ -1,35 +1,36 @@
 import React from 'react';
-import IconSun from '../IconSun';
+import IconSun from '../../images/phone-call.svg';
 import logo from '../../images/Zbenice_Gold.png';
+import { Link } from 'gatsby';
 
 const Header = () => {
   return (
     <>
       <header>
-        <div class="mode-switcher">
-          <label class="mode__switch--label" for="mode-switch">
+        <div className="mode-switcher">
+          <label className="mode__switch--label" htmlFor="mode-switch">
             <input type="checkbox" name="mode-switch" id="mode-switch" />
-            <div class="toggler switcher"></div>
+            <div className="toggler switcher"></div>
           </label>
-          {/* <IconSun /> */}
+          <IconSun />
         </div>
 
-        <div class="header__content">
+        <div className="header__content">
           <a href="#">
-            <img class="header__logo" src={logo} alt="logo zámku Zbenice" />
+            <img className="header__logo" src={logo} alt="logo zámku Zbenice" />
           </a>
-          <div class="header__details">
-            <a class="header__details--text" href="#">
+          <div className="header__details">
+            <a className="header__details--text" href="#">
               Zámek Zbenice
             </a>
           </div>
         </div>
 
-        <nav class="header__nav">
-          <div class="header__hamburger-items">
-            <span class="header__hamburger-text">Menu</span>
+        <nav className="header__nav">
+          <div className="header__hamburger-items">
+            <span className="header__hamburger-text">Menu</span>
             <button
-              class="header__hamburger--btn"
+              className="header__hamburger--btn"
               type="button"
               aria-label="open hamburger menu"
               aria-expanded="false"
@@ -39,26 +40,26 @@ const Header = () => {
               <span></span>
             </button>
           </div>
-          <ul class="header__nav--list">
-            <li class="header__nav--item">
-              <a class="header__nav--link" href="#">
+          <ul className="header__nav--list">
+            <li className="header__nav--item">
+              <Link className="header__nav--link" to="/">
                 Domů
-              </a>
+              </Link>
             </li>
-            <li class="header__nav--item">
-              <a class="header__nav--link" href="#">
+            <li className="header__nav--item">
+              <Link className="header__nav--link" to="/aboutcastle">
                 O zámku
-              </a>
+              </Link>
             </li>
-            <li class="header__nav--item">
-              <a class="header__nav--link" href="#">
+            <li className="header__nav--item">
+              <Link className="header__nav--link" to="#">
                 Fotogalerie
-              </a>
+              </Link>
             </li>
-            <li class="header__nav--item">
-              <a class="header__nav--link" href="#">
+            <li className="header__nav--item">
+              <Link className="header__nav--link" to="/kontakt">
                 Kontakt
-              </a>
+              </Link>
             </li>
           </ul>
         </nav>

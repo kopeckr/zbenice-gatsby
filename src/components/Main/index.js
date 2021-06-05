@@ -1,25 +1,27 @@
 import React from 'react';
+import uvodniFotka from '../../images/Zbenice_Desktop_01.jpg';
 
 const Main = () => {
   return (
     <>
-      <main class="main">
+      <main className="main">
         <img
-          class="main__photo"
-          src="img/Zbenice_Desktop_01.jpg"
+          className="main__photo"
+          src={uvodniFotka}
+          // src="../../images/Zbenice_Desktop_01.jpg"
           alt="Fotka zámku Zbenice"
         />
 
-        <div class="main__section">
+        <div className="main__section">
           <img
-            class="main__photo-ceska"
+            className="main__photo-ceska"
             src="img/Ceska-Desktop.jpg"
             alt="Fotka pana Češky"
           />
 
-          <div class="main__welcome">
-            <h3 class="main__headline">Vítejte na zámku Zbenice</h3>
-            <div class="main__text">
+          <div className="main__welcome">
+            <h3 className="main__headline">Vítejte na zámku Zbenice</h3>
+            <div className="main__text">
               <p>
                 Zámek Zbenice se nachází ve stejnojmenné vesnici na jihu okresu
                 Příbram ve Středočeském kraji. Na jeho místě původně stála
@@ -41,21 +43,21 @@ const Main = () => {
           </div>
         </div>
 
-        <div class="main__photo-section">
-          <h3 class="main__photos-headline">Zámek Zbenice</h3>
-          <div class="main__all-photos">
+        <div className="main__photo-section">
+          <h3 className="main__photos-headline">Zámek Zbenice</h3>
+          <div className="main__all-photos">
             <img
-              class="main__photos"
+              className="main__photos"
               src="img/zbenice-54.jpg"
               alt="Fotka zámku Zbenice"
             />
             <img
-              class="main__photos"
+              className="main__photos"
               src="img/zbenice-42.jpg"
               alt="Fotka erbu zámku Zbenice"
             />
             <img
-              class="main__photos"
+              className="main__photos"
               src="img/zbenice-52.jpg"
               alt="Fotka zámku Zbenice"
             />

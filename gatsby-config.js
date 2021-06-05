@@ -1,6 +1,17 @@
 module.exports = {
   siteMetadata: {
-    title: "Zbenice",
+    title: 'Zbenice',
   },
-  plugins: ["gatsby-plugin-sass", "gatsby-plugin-gatsby-cloud"],
+  plugins: [
+    'gatsby-plugin-sass',
+    'gatsby-plugin-gatsby-cloud',
+    {
+      resolve: 'gatsby-plugin-react-svg',
+      options: {
+        rule: {
+          include: 'images/svg',
+        },
+      },
+    },
+  ],
 };
