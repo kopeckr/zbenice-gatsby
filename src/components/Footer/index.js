@@ -9,12 +9,12 @@ const Footer = () => {
     <>
       <footer>
         <div className="footer__details">
-          <img className="footer__logo" src={logo} alt="logo zámku Zbenice" />
+          <img className="footer__logo" src={logo} alt="logo zámku Zbenice"/>
           <div className="footer__address">
             <p>
               Adresa
               <br />
-              Zamek Zbenice
+              Zámek Zbenice
               <br />
               Zbenice 1<br />
               262 31 Zbenice
@@ -52,12 +52,12 @@ const Footer = () => {
               </Link>
             </li>
             <li className="footer__item">
-              <Link className="footer__link" to="/">
+              <Link className="footer__link" to="/galerie">
                 Fotogalerie
               </Link>
             </li>
             <li className="footer__item">
-              <Link className="footer__link" to="/">
+              <Link className="footer__link" to="/kontakt">
                 Kontakt
               </Link>
             </li>

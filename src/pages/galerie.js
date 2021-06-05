@@ -1,15 +1,16 @@
 import * as React from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import Gallery from '../components/Gallery';
 
-const ContactPage = () => {
+const GalleryPage = () => {
   return (
     <>
       <Header />
-      <h1>Kontakt</h1>
+      <Gallery />
       <Footer />
     </>
   );
 };
 
-export default ContactPage;
+export default GalleryPage;
