@@ -2,15 +2,15 @@
   text-transform: uppercase;
   font-family: 'EB Garamond', serif;
   font-weight: normal;
-}
 
-.main__photo {
-  width: 100%;
-  height: auto;
-}
+  &__photo {
+    width: 100%;
+    height: auto;
+  }
 
-p {
-  margin: 0.5rem;
+  &__content {
+    margin: 0.5rem;
+  }
 }
 
 /* main mobile version */
@@ -18,86 +18,89 @@ p {
 .main {
   display: flex;
   flex-direction: column;
-}
 
-.main__section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 1.7rem;
-  padding-top: 1rem;
-  padding-bottom: 0;
-}
+  &__section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.7rem;
+    padding-top: 1rem;
+    padding-bottom: 0;
+  }
 
-.main__welcome,
-.main__all-photos {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
+  &__welcome,
+  &__all-photos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 
-.main__photo-section {
-  background-color: var(--gold);
-}
+  &__photo-section {
+    background-color: $color-gold;
+  }
 
-.main__photos-headline {
-  text-transform: uppercase;
-  font-family: 'EB Garamond', serif;
-  font-weight: normal;
-  margin-top: 0;
-  margin-bottom: 1.1rem;
-  padding: 1rem;
-  background-color: var(--white);
-  text-align: center;
-}
+  &__photos-headline {
+    text-transform: uppercase;
+    font-family: 'EB Garamond', serif;
+    font-weight: normal;
+    margin-top: 0;
+    margin-bottom: 1.1rem;
+    padding: 1rem;
+    background-color: $color-white;
+    text-align: center;
+  }
 
-.main__photo-ceska {
-  width: 75%;
-  height: auto;
-  border: 1px solid var(--gold);
-  order: 1;
-  border-radius: 0.5rem;
-}
+  &__photo-ceska {
+    width: 75%;
+    height: auto;
+    border: 1px solid $color-gold;
+    order: 1;
+    border-radius: 0.5rem;
+  }
 
-.main__photos {
-  width: 75%;
-  height: auto;
-  margin-bottom: 1.1rem;
+  &__photos {
+    width: 75%;
+    height: auto;
+    margin-bottom: 1.1rem;
+  }
 }
 
 /* main desktop version */
 
-@media screen and (min-width: 52.5em) {
-  .main__section {
-    display: flex;
-    flex-direction: row;
-  }
+@include xl {
+  .main {
+    &__section {
+      display: flex;
+      flex-direction: row;
+    }
 
-  .main__photo-ceska {
-    max-width: 25%;
-    height: auto;
-    order: 0;
-    margin-top: 2rem;
-  }
+    &__photo-ceska {
+      max-width: 25%;
+      height: auto;
+      order: 0;
+      margin-top: 2rem;
+    }
 
-  .main__text {
-    padding: 1.5rem;
-  }
+    &__text {
+      padding: 1.5rem;
+      padding-top: 0;
+    }
 
-  .main__photos-headline {
-    text-align: left;
-  }
+    &__photos-headline {
+      text-align: left;
+    }
 
-  .main__all-photos {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-  }
+    &__all-photos {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-evenly;
+    }
 
-  .main__photos {
-    max-width: 30%;
-    height: auto;
+    &__photos {
+      max-width: 30%;
+      height: auto;
+    }
   }
 }

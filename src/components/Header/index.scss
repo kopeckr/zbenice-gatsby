@@ -20,14 +20,14 @@
   width: 3rem;
 
   &.input {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      margin: 0;
-    }
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
   }
+}
 
 .toggler {
   background-color: $color-gold;
@@ -58,7 +58,7 @@ input:checked + .toggler {
 }
 
 .toggler {
-    &.switcher {
+  &.switcher {
     border-radius: 2.1rem;
 
     &::before {
@@ -216,12 +216,16 @@ header {
 
 .header__nav {
   background-color: $color-white;
-  padding: 0 1.25rem;
+
+  &--closed {
+    display: none;
+  }
 
   &--list {
     text-transform: uppercase;
     font-family: $font-menu;
     padding-top: 1rem;
+    border-bottom: solid 1px $color-gold;
 
     @include xl {
       display: flex;
@@ -282,5 +286,3 @@ header {
     z-index: 99;
   }
 }
-
-

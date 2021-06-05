@@ -67,7 +67,7 @@ const Footer = () => {
         <div className="footer__copyrights">
           <p className="footer__copyrights--text">
             Všechna práva vyhrazena. Žádná část tohoto webu, není-li uvedeno
-            jinak, v&nbspcelku ani v části nesmí být kopírována nebo jinak
+            jinak, v celku ani v části nesmí být kopírována nebo jinak
             reprodukována bez výslovné souhlasu provozovatele.
           </p>
           <a className="footer__copyrights--link" href="#">
