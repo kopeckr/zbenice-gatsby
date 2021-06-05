@@ -143,6 +143,7 @@ header {
   justify-content: flex-end;
   align-items: center;
   padding: 0.5rem;
+  border-bottom: solid 1px $color-gold;
 
   @include xl {
     display: none;
@@ -201,7 +202,6 @@ header {
 
 .header__nav {
   background-color: $color-white;
-  border-bottom: solid 1px $color-gold;
 
   &--closed {
     display: none;
@@ -211,6 +211,7 @@ header {
     text-transform: uppercase;
     font-family: $font-menu;
     padding-top: 1rem;
+    border-bottom: solid 1px $color-gold;
 
     @include xl {
       display: flex;

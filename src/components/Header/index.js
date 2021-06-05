@@ -18,13 +18,13 @@ const Header = () => {
         </div>
 
         <div className="header__content">
-          <a href="#">
+          <Link href="/">
             <img className="header__logo" src={logo} alt="logo zámku Zbenice" />
-          </a>
+          </Link>
           <div className="header__details">
-            <a className="header__details--text" href="#">
+            <Link className="header__details--text" href="/">
               Zámek Zbenice
-            </a>
+            </Link>
           </div>
         </div>
 
