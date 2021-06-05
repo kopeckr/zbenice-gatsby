@@ -1,5 +1,5 @@
 .introduction {
-  border-top: solid 1px $color-gold;
+  // border-top: solid 1px $color-gold;
   &__photo {
     width: 50%;
     height: auto;
@@ -14,14 +14,6 @@
     margin: 0 auto;
     text-align: center;
   }
-
-  &__headline {
-    font-family: 'EB Garamond', serif;
-    text-transform: uppercase;
-    font-weight: normal;
-    padding-bottom: 1rem;
-    padding-top: 1rem;
-  }
 }
 
 .intro {
@@ -30,14 +22,6 @@
     max-width: 75rem;
     margin: 0 auto;
     text-align: center;
-  }
-
-  &__headline {
-    font-family: 'EB Garamond', serif;
-    text-transform: uppercase;
-    font-weight: normal;
-    padding-bottom: 1rem;
-    padding-top: 1rem;
   }
 }
 

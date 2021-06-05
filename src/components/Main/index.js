@@ -8,7 +8,7 @@ import fotkaCeska from '../../images/zbenice-ceska.jpg';
 const Main = () => {
   return (
     <>
-      <main className="main">
+      <main className="main" id="main">
         <img
           className="main__photo"
           src={uvodniFotka}
@@ -25,7 +25,7 @@ const Main = () => {
           <div className="main__welcome">
             <h3 className="main__headline">Vítejte na zámku Zbenice</h3>
             <div className="main__text">
-              <p>
+              <p className="main__content">
                 Zámek Zbenice se nachází ve stejnojmenné vesnici na jihu okresu
                 Příbram ve Středočeském kraji. Na jeho místě původně stála
                 starší středověká tvrz, kterou nechal v roce 1626 Vilém
@@ -34,14 +34,16 @@ const Main = () => {
                 rybníku na okraji vesnice Zbenice. Zámek je chráněn jako
                 kulturní památka.
               </p>
-              <p>
+              <p className="main__content">
                 V roce 2007 byl zakoupen restaurátorem Jiřím Češkou, nyní slouží
                 jako restaurátorská dílna. Také je využíván k příležitostným
                 kulturním akcím.
               </p>
-              <p>A opět pomalu začíná ožívat.</p>
-              <p>Na návštěvu Vás zve majitel zámku Zbenice</p>
-              <p>Jiří Češka</p>
+              <p className="main__content">A opět pomalu začíná ožívat.</p>
+              <p className="main__content">
+                Na návštěvu Vás zve majitel zámku Zbenice
+              </p>
+              <p className="main__content">Jiří Češka</p>
             </div>
           </div>
         </div>

@@ -46,7 +46,7 @@ const AboutCastle = () => {
     <>
       <section className="introduction">
         <div className="introduction__container">
-          <h3 className="introduction__headline">O zámku</h3>
+          <h3>O zámku</h3>
           <p className="introduction__history">
             Historie zámku Zbenice sahá až do 13. století, ale je to až o 200
             let později, kdy máme první zmínky o rodu Šiců z Drahenic, kteří
@@ -69,7 +69,7 @@ const AboutCastle = () => {
 
       <section className="intro">
         <div className="intro__container">
-          <h3 className="intro__headline">Jak běžel čas na zámku Zbenice</h3>
+          <h3>Jak běžel čas na zámku Zbenice</h3>
         </div>
       </section>
 
