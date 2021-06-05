@@ -52,12 +52,12 @@ const Footer = () => {
               </Link>
             </li>
             <li className="footer__item">
-              <Link className="footer__link" to="/">
+              <Link className="footer__link" to="/galerie">
                 Fotogalerie
               </Link>
             </li>
             <li className="footer__item">
-              <Link className="footer__link" to="/">
+              <Link className="footer__link" to="/kontakt">
                 Kontakt
               </Link>
             </li>
