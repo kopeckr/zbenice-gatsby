@@ -16,11 +16,13 @@
   max-width: 62.5rem;
   margin-right: auto;
   margin-left: auto;
+  padding: 0 1.25rem;
 }
 
 .lg-react-element {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  margin: 0 -0.315rem;
 }
 
 .gallery {
