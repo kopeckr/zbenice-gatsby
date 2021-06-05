@@ -1,3 +1,17 @@
+/* The default, true-type, font in lightgallery is broken. We need to override it here. */
+@font-face {
+    font-family: 'lg-override';
+    src: url('../fonts/lg.woff?io9a6k') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+.lg .lg-icon {
+    /* Lightgallery uses !important, we need to do it here as well. */
+    font-family: 'lg-override' !important;
+}
+
 .container {
   max-width: 62.5rem;
   margin-right: auto;
