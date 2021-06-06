@@ -2,6 +2,7 @@ import React from 'react';
 import emailjs from 'emailjs-com';
 
 const Form = () => {
+
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -17,19 +18,19 @@ const Form = () => {
     <>
       <h2>Kontaktní formulář</h2>
       <form className="contact__form" onSubmit={sendEmail}>
-        <input type="hidden" name="contact__number" />
+        {/* <input type="hidden" name="contact_number" /> */}
         <label htmlFor="name" className="contact__form--label">Jméno a přijmení
-        <input type="text" name="user__name" id="name" className="contact__form--input"/>
+        <input type="text" name="user_name" id="name" className="contact__form--input" required/>
         </label>
         
         <label htmlFor="email" className="contact__form--label">E-mail
-        <input type="email" name="user__email" id="email" className="contact__form--input"/>
+        <input type="email" name="user_email" id="email" className="contact__form--input" required/>
         </label>
       
         <label htmlFor="subject" className="contact__form--label">Vaše zpráva
-        <textarea name="message" id="subject" rows="8" cols="50" className="contact__form--input"/>
+        <textarea name="message" id="subject" rows="8" cols="50" className="contact__form--input" required/>
         </label>
-        <input type="submit" aria-label="Odeslat zprávu" className="cta" value="Odeslat zprávu" />
+        <button type="submit" className="cta">Odeslat zprávu</button>
     </form>
     </>
   );

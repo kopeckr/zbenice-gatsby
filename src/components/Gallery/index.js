@@ -22,7 +22,7 @@ const Gallery = () => {
         <LightGallery speed={500} plugins={[lgThumbnail, lgZoom, lgFullscreen]} mode="lg-fade">
         {images.map((image) => 
           <a href={image.source} key={image.id} className="gallery__item" data-sub-html={image.author}>
-          <img alt={image.alt} src={image.source} className="gallery__item-img" />
+          <img alt={image.alt} src={image.source} className="gallery__item-img" loading="lazy"/>
         </a>
         )}
         </LightGallery>
@@ -36,7 +36,7 @@ const Gallery = () => {
       <LightGallery speed={500} plugins={[lgThumbnail, lgZoom, lgFullscreen]} mode="lg-fade">
         {imagesTwo.map((image) => 
           <a href={image.source} key={image.id} className="gallery__item" data-sub-html={image.author}>
-          <img alt={image.alt} src={image.source} className="gallery__item-img" />
+          <img alt={image.alt} src={image.source} className="gallery__item-img" loading="lazy"/>
         </a>
         )}
         </LightGallery>
