@@ -11,6 +11,7 @@ const Form = () => {
       }, (error) => {
           console.log(error.text);
       });
+  }
 
   return (
     <>
