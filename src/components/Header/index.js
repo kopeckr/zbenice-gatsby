@@ -4,27 +4,41 @@ import logo from '../../images/zbenice-logo.png';
 import { Link } from 'gatsby';
 
 const Header = () => {
+  // Check the value of 'dark-mode' key in localstorage
+  const initialDarkMode = localStorage.getItem('dark-mode');
+
+  // If the value is string 'true', darkModeState is boolean true, else boolean false
+  const darkModeState = initialDarkMode === 'true';
+
+  // Set the value to the localstorage
+  localStorage.setItem('dark-mode', darkModeState);
+
   const [open, setOpen] = useState(false);
-  const [darkMode, setDarkMode] = useState(false);
+
+  // The default state value is darkModeState
+  // This is because if user goes to another page, he needs to get the state from the localstorage
+  const [darkMode, setDarkMode] = useState(darkModeState);
 
   const toggleDarkMode = () => {
+    console.log(darkMode);
     if (darkMode === false) {
-      setDarkMode(!darkMode);
       document.body.classList.add('dark-mode');
     } else {
-      setDarkMode(!darkMode);
       document.body.classList.remove('dark-mode');
     }
+
+    localStorage.setItem('dark-mode', !darkMode);
+    setDarkMode(!darkMode);
   };
 
   return (
     <>
       <header>
-        <p>{`${darkMode}`}</p>
         <div className="mode-switcher">
           <label className="mode__switch--label" htmlFor="mode-switch">
             <input
               onClick={toggleDarkMode}
+              checked={darkMode ? 'checked' : undefined}
               type="checkbox"
               name="mode-switch"
               id="mode-switch"
