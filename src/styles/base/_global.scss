@@ -3,6 +3,8 @@
 body {
   font-size: $font-size;
   font-family: $font-body;
+  background-color: $color-white;
+  color: $color-black;
 }
 
 :focus {

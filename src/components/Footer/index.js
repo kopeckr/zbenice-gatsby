@@ -5,8 +5,13 @@ import IconPhone from '../../svg/phone-call.svg';
 import IconEmail from '../../svg/icon-email.svg';
 
 const Footer = () => {
+  // const [open, setOpen] = useState(false);
+  // const [darkMode, setDarkMode] = useState(false);
+
+  // const toggleDarkMode = () => setDarkMode(!darkMode);
   return (
     <>
+      {/* <footer className={darkMode ? 'dark-mode' : ''}> */}
       <footer>
         <div className="footer__details">
           <Link to="/">

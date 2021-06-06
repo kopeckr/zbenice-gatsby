@@ -1,0 +1,43 @@
+.dark-mode {
+  background-color: $color-very-darkblue;
+  color: $color-darker-white;
+
+  a {
+    color: $color-darker-white;
+  }
+
+  h1,
+  .header__hamburger-text {
+    color: $color-darker-white;
+  }
+
+  .header__hamburger-items,
+  .header__nav--list {
+    border-color: $color-darker-white;
+  }
+
+  .header__hamburger--btn span,
+  .header__details::after,
+  .header__details::before {
+    background-color: $color-darker-white;
+  }
+
+  header,
+  footer,
+  .header__hamburger--items {
+    background-color: $color-very-darkblue;
+  }
+
+  .header__nav--link:hover {
+    background-color: $color-very-darkblue;
+    color: $color-darker-white;
+  }
+
+  .header__nav,
+  .main__wrapper,
+  .main__photos-headline,
+  .main__photo-content,
+  .container {
+    background-color: $color-verydark-grey;
+  }
+}

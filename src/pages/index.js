@@ -5,14 +5,14 @@ import Main from '../components/Main';
 
 const IndexPage = () => {
   return (
-    <>
+    <div>
       <a href="#main" className="skip-links">
         Přeskočit na obsah
       </a>
       <Header />
       <Main />
       <Footer />
-    </>
+    </div>
   );
 };
 

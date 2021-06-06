@@ -5,13 +5,40 @@ import { Link } from 'gatsby';
 
 const Header = () => {
   const [open, setOpen] = useState(false);
+  const [darkMode, setDarkMode] = useState(false);
+
+  const toggleDarkMode = () => {
+    if (darkMode === false) {
+      setDarkMode(!darkMode);
+      document.body.classList.add('dark-mode');
+    } else {
+      setDarkMode(!darkMode);
+      document.body.classList.remove('dark-mode');
+    }
+  };
+
+  // const toggleDarkMode = () => {
+  //   setDarkMode(!darkMode);
+  //   if (darkMode === true) {
+  //     document.body.classList.add('dark-mode');
+  //   } else {
+  //     document.body.classList.remove('dark-mode');
+  //   }
+  // };
+
+  //element bude mit class background secondary
 
   return (
     <>
       <header>
         <div className="mode-switcher">
           <label className="mode__switch--label" htmlFor="mode-switch">
-            <input type="checkbox" name="mode-switch" id="mode-switch" />
+            <input
+              onClick={toggleDarkMode}
+              type="checkbox"
+              name="mode-switch"
+              id="mode-switch"
+            />
             <div className="toggler switcher"></div>
           </label>
           <IconSun />
