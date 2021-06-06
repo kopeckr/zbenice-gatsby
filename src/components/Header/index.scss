@@ -117,6 +117,7 @@ header {
     padding-left: 0.6rem;
     padding-right: 0.6rem;
     flex-grow: 0;
+    color: $color-white;
   }
 
   &::before {
@@ -238,12 +239,11 @@ header {
     transition: all ease-in-out 250ms;
 
     @include xl {
-      color: $color-darkblue;
       padding: 0.8rem;
     }
 
     &:hover {
-      color: var(--white);
+      color: $color-white;
       background: $color-darkblue;
       cursor: pointer;
       transition: all ease-in-out 250ms;
@@ -251,25 +251,8 @@ header {
       @include xl {
         background-color: transparent;
         color: $color-very-darkblue;
+        text-decoration: underline;
       }
     }
-  }
-}
-
-/* skip links */
-
-.skip-links {
-  background-color: $color-white;
-  color: $color-darkblue;
-  padding: 0.5rem;
-  left: 0;
-  top: 0;
-  position: absolute;
-  transform: translateY(-100%);
-  transition: transform 0.3s;
-
-  &:focus {
-    transform: translateY(0);
-    z-index: 99;
   }
 }
