@@ -3,13 +3,12 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Main from '../components/Main';
 import ScrollToTopBtn from '../components/ScrollToTop';
+import SkipLinks from '../components/SkipLinks';
 
 const IndexPage = () => {
   return (
     <>
-      <a href="#main" className="skip-links">
-        Přeskočit na obsah
-      </a>
+      <SkipLinks />
       <ScrollToTopBtn />
       <Header />
       <Main />

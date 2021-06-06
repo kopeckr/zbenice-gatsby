@@ -13,7 +13,7 @@ const Map = () => {
     zoom: 15,
   });
   return (
-    <main className="container container--desktop">
+    <main className="container container--desktop" id="main">
     <section className="contact contact--left-top">
       <h1>Kontakt</h1>
       <p className="contact__text">Kde nás najdete?</p>

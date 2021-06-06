@@ -44,6 +44,7 @@ const AboutCastle = () => {
 
   return (
     <>
+    <main id="main">
       <section className="introduction">
         <div className="introduction__container">
           <h3>O zámku</h3>
@@ -154,6 +155,7 @@ const AboutCastle = () => {
           </li>
         </ul>
       </section>
+      </main>
     </>
   );
 };

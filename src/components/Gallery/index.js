@@ -14,7 +14,7 @@ import imagesTwo from '../../gallery-two.js';
 
 const Gallery = () => {
   return (
-    <main className="container">
+    <main className="container" id="main">
     <section className="gallery__top">
       <h1>Fotogalerie</h1>
       <h2>Jaro na Zámku Zbenice</h2>
