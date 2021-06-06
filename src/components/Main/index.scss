@@ -2,22 +2,34 @@
   text-transform: uppercase;
   font-family: 'EB Garamond', serif;
   font-weight: normal;
+  padding: 1rem 0;
+  font-size: 1.5em;
 
   &__photo {
     width: 100%;
     height: auto;
   }
-
-  &__content {
-    margin: 0.5rem;
-  }
 }
 
+.header__nav--link-gallery {
+  padding: 0;
+  padding-left: 5px;
+  color: $color-black;
+}
 /* main mobile version */
 
 .main {
   display: flex;
   flex-direction: column;
+
+  &__content {
+    padding-bottom: 0.8rem;
+
+    &--align {
+      text-align: right;
+      padding-right: 2rem;
+    }
+  }
 
   &__section {
     display: flex;
@@ -38,7 +50,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
+    text-align: left;
   }
 
   &__photo-section {
@@ -50,7 +62,6 @@
     font-family: 'EB Garamond', serif;
     font-weight: normal;
     margin-top: 0;
-    margin-bottom: 1.1rem;
     padding: 1rem;
     background-color: $color-white;
     text-align: center;
@@ -61,13 +72,25 @@
     height: auto;
     border: 1px solid $color-gold;
     order: 1;
-    border-radius: 0.5rem;
+
+    max-width: 40vh;
+    object-fit: cover;
   }
 
   &__photos {
     width: 75%;
     height: auto;
     margin-bottom: 1.1rem;
+  }
+
+  &__photos-first {
+    margin-top: 1.1rem;
+  }
+
+  &__photo-content {
+    text-align: center;
+    padding-bottom: 0.8rem;
+    background-color: $color-white;
   }
 }
 
@@ -78,13 +101,13 @@
     &__section {
       display: flex;
       flex-direction: row;
+      padding-top: 3rem;
     }
 
     &__photo-ceska {
       max-width: 25%;
       height: auto;
       order: 0;
-      margin-top: 2rem;
     }
 
     &__text {
@@ -92,20 +115,21 @@
       padding-top: 0;
     }
 
-    &__photos-headline {
-      text-align: left;
-    }
-
     &__all-photos {
       display: flex;
       flex-direction: row;
       align-items: center;
       justify-content: space-evenly;
+      margin-top: 1.1rem;
     }
 
     &__photos {
       max-width: 30%;
       height: auto;
+    }
+
+    &__photos-first {
+      margin-top: 0;
     }
   }
 }

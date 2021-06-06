@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'gatsby';
 import uvodniFotka from '../../images/zbenice-32.jpg';
 import fotka1 from '../../images/zbenice-55.jpg';
 import fotka2 from '../../images/zbenice-42.jpg';
@@ -15,7 +16,8 @@ const Main = () => {
           alt="Fotka zámku Zbenice"
         />
 
-        <div className="main__section">
+        <div className="main__section container">
+          <h1></h1>
           <img
             className="main__photo-ceska"
             src={fotkaCeska}
@@ -23,7 +25,7 @@ const Main = () => {
           />
 
           <div className="main__welcome">
-            <h3 className="main__headline">Vítejte na zámku Zbenice</h3>
+            <h2 className="main__headline">Vítejte na zámku Zbenice</h2>
             <div className="main__text">
               <p className="main__content">
                 Zámek Zbenice se nachází ve stejnojmenné vesnici na jihu okresu
@@ -43,16 +45,24 @@ const Main = () => {
               <p className="main__content">
                 Na návštěvu Vás zve majitel zámku Zbenice
               </p>
-              <p className="main__content">Jiří Češka</p>
+              <p className="main__content main__content--align">Jiří Češka</p>
             </div>
           </div>
         </div>
 
         <div className="main__photo-section">
           <h3 className="main__photos-headline">Zámek Zbenice</h3>
+          <p className="main__photo-content">
+            Zámek Zbenice vyzařuje jedinečnou atmosféru. Více fotografií
+            naleznete v naší
+            <Link className="header__nav--link-gallery" to="/galerie">
+              fotogalerii
+            </Link>
+            .
+          </p>
           <div className="main__all-photos">
             <img
-              className="main__photos"
+              className="main__photos main__photos-first"
               src={fotka1}
               alt="Fotka zámku Zbenice"
             />
