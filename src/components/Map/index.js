@@ -13,8 +13,8 @@ const Map = () => {
     zoom: 15,
   });
   return (
-    <main className="container">
-    <section className="contact">
+    <main className="container container--desktop">
+    <section className="contact contact--left-top">
       <h1>Kontakt</h1>
       <p className="contact__text">Kde nás najdete?</p>
       <div className="contact__address">
@@ -42,7 +42,7 @@ const Map = () => {
         </div>
     </section>
 
-    <section>
+    <section className="contact contact--left-bottom">
     <ReactMapGL
       mapStyle={{
         version: 8,
@@ -95,7 +95,7 @@ const Map = () => {
     ) : null}
     </ReactMapGL>
     </section>
-    <section>
+    <section className="contact contact--form">
       <Form />
     </section>
     </main>
