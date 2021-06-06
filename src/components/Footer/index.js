@@ -5,14 +5,21 @@ import IconPhone from '../../svg/phone-call.svg';
 import IconEmail from '../../svg/icon-email.svg';
 
 const Footer = () => {
+  // const [open, setOpen] = useState(false);
+  // const [darkMode, setDarkMode] = useState(false);
+
+  // const toggleDarkMode = () => setDarkMode(!darkMode);
   return (
     <>
+      {/* <footer className={darkMode ? 'dark-mode' : ''}> */}
       <footer>
         <div className="footer__details">
-          <img className="footer__logo" src={logo} alt="logo zámku Zbenice"/>
+          <Link to="/">
+            <img className="footer__logo" src={logo} alt="logo zámku Zbenice" />
+          </Link>
           <div className="footer__address">
             <p>
-              Adresa
+              <strong>Adresa</strong>
               <br />
               Zámek Zbenice
               <br />
@@ -70,7 +77,10 @@ const Footer = () => {
             jinak, v celku ani v části nesmí být kopírována nebo jinak
             reprodukována bez výslovné souhlasu provozovatele.
           </p>
-          <a className="footer__copyrights--link" href="https://www.gdpr.cz/gdpr/heslo/zpracovani-osobnich-udaju/">
+          <a
+            className="footer__copyrights--link"
+            href="https://www.gdpr.cz/gdpr/heslo/zpracovani-osobnich-udaju/"
+          >
             Informace o zpracování osobních údajů
           </a>
         </div>

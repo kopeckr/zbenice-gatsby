@@ -1,18 +1,14 @@
 .introduction {
-  // border-top: solid 1px $color-gold;
-  &__photo {
-    width: 50%;
-    height: auto;
-    padding: 0.5rem;
-    background-color: $color-gold;
-    margin-left: 25%;
-  }
-
   &__container {
     width: 90%;
     max-width: 75rem;
     margin: 0 auto;
     text-align: center;
+  }
+
+  &__history {
+    text-align: left;
+    margin-bottom: 3rem;
   }
 }
 
@@ -27,7 +23,8 @@
 
 .timeline {
   padding-bottom: 3rem;
-  //timeline__item
+  padding-top: 3rem;
+
   &__item {
     list-style-type: none;
     position: relative;
@@ -54,7 +51,7 @@
     }
 
     &:nth-child(even) .timeline__text {
-      left: -29.3rem;
+      left: -27.44rem;
     }
 
     &:nth-child(odd) .timeline__text::before {
@@ -100,6 +97,9 @@
     @include xxl {
       &:nth-child(even) div {
         left: -289px;
+      }
+      &:nth-child(even) .timeline__text {
+        left: -18rem;
       }
     }
 
@@ -152,159 +152,40 @@
   }
 }
 
-//   @media screen and (max-width: 600px) {
-//     &__item {
-//       margin-left: 20px;
-//     }
-//     &__item .timeline__text {
-//       width: calc(100vw - 91px);
-//     }
-//     &__item:nth-child(even) .timeline__text {
-//       left: 45px;
-//     }
-//     &__item:nth-child(even) .timeline__text::before {
-//       left: -15px;
-//       border-width: 8px 16px 8px 0;
-//       border-color: transparent $color-darkblue transparent transparent;
-//     }
-//   }
-// }
+.section__all-photos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: $color-gold;
+  width: 100%;
+}
 
-// .timeline ul li {
-//   list-style-type: none;
-//   position: relative;
-//   width: 0.37rem;
-//   margin: 0 auto;
-//   padding-top: 3rem;
-//   background: $color-darkblue;
-// }
+.section__photo-first {
+  margin: 1.1rem auto;
+}
 
-// .timeline ul li::after {
-//   content: '';
-//   position: absolute;
-//   left: 50%;
-//   bottom: 0;
-//   transform: translateX(-50%);
-//   width: 1.9rem;
-//   height: 1.9rem;
-//   border-radius: 50%;
-//   background: inherit;
-//   z-index: 1;
-// }
+.section__photo {
+  width: 73%;
+  margin-bottom: 1.1rem;
+}
 
-// .timeline ul li div {
-//   position: relative;
-//   bottom: 0;
-//   width: 25rem;
-//   padding: 1rem;
-//   background: $color-white;
-// }
-
-// .timeline ul li div::before {
-//   content: '';
-//   position: absolute;
-//   bottom: 0.4rem;
-//   width: 0;
-//   height: 0;
-//   border-style: solid;
-// }
-
-// .timeline ul li:nth-child(odd) div {
-//   left: 2.8rem;
-// }
-
-// .timeline ul li:nth-child(odd) div::before {
-//   left: -1rem;
-//   border-width: 0.5rem 1rem 0.5rem 0;
-//   border-color: transparent var(--gold) transparent transparent;
-// }
-
-// .timeline ul li:nth-child(even) div {
-//   left: -29.3rem;
-// }
-
-// .timeline ul li:nth-child(even) div::before {
-//   right: -15px;
-//   border-width: 0.5rem 0 0.5rem 1rem;
-//   border-color: transparent transparent transparent var(--gold);
-// }
-
-// .timeline__year {
-//   display: block;
-//   font-size: 1.2rem;
-//   font-weight: bold;
-//   margin-bottom: 0.5rem;
-// }
-
-/* EFFECTS
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-// .timeline ul li::after {
-//   transition: background 0.5s ease-in-out;
-// }
-
-// .timeline ul li.in-view::after {
-//   background: var(--gold);
-// }
-
-// .timeline ul li div {
-//   visibility: hidden;
-//   opacity: 0;
-//   transition: all 0.5s ease-in-out;
-// }
-
-// .timeline ul li:nth-child(odd) div {
-//   transform: translate3d(12.5rem, 0, 0);
-// }
-
-// .timeline ul li:nth-child(even) div {
-//   transform: translate3d(-12.5rem, 0, 0);
-// }
-
-// .timeline ul li.in-view div {
-//   transform: none;
-//   visibility: visible;
-//   opacity: 1;
-// }
-
-/* GENERAL MEDIA QUERIES
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-// @media screen and (max-width: 900px) {
-//   .timeline ul li div {
-//     width: 250px;
-//   }
-//   .timeline ul li:nth-child(even) div {
-//     left: -289px;
-//     /*250+45-6*/
-//   }
-// }
-
-// @media screen and (max-width: 600px) {
-//   .timeline ul li {
-//     margin-left: 20px;
-//   }
-//   .timeline ul li div {
-//     width: calc(100vw - 91px);
-//   }
-//   .timeline ul li:nth-child(even) div {
-//     left: 45px;
-//   }
-//   .timeline ul li:nth-child(even) div::before {
-//     left: -15px;
-//     border-width: 8px 16px 8px 0;
-//     border-color: transparent var(--darkblue) transparent transparent;
-//   }
-// }
-
-@keyframes scaleAnimation {
-  0% {
-    transform: translateX(-50%) scale(1);
+@include xl {
+  .section__all-photos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: $color-gold;
+    width: 100%;
   }
-  50% {
-    transform: translateX(-50%) scale(1.25);
+
+  .section__photo {
+    max-width: 30%;
+    margin: 1.1rem 0;
   }
-  100% {
-    transform: translateX(-50%) scale(1);
+
+  .section__photo-first {
+    margin: 0;
+    max-width: 33.7%;
   }
 }

@@ -3,6 +3,8 @@
 body {
   font-size: $font-size;
   font-family: $font-body;
+  background-color: $color-white;
+  color: $color-black;
 }
 
 :focus-visible {
@@ -30,7 +32,7 @@ h1 {
   text-transform: uppercase;
   color: $color-black;
   text-align: center;
-  padding: 1rem 0;
+  padding: 3rem 0 1rem 0;
 
   @include xl {
     text-align: left;
@@ -45,7 +47,6 @@ h2 {
   padding-bottom: 1rem;
 }
 
-
 h3 {
   font-family: $font-menu;
   text-transform: uppercase;
@@ -53,4 +54,3 @@ h3 {
   padding-bottom: 1rem;
   padding-top: 1rem;
 }
-

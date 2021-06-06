@@ -72,6 +72,12 @@ header {
   color: $color-white;
 }
 
+.dark-mode header {
+  background-color: $color-very-darkblue;
+  color: $color-white;
+}
+// header uvnitř body
+
 .header__content {
   display: flex;
   flex-direction: column;
