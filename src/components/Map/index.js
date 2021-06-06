@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import 'mapbox-gl/dist/mapbox-gl.css';
 import ReactMapGL, { Marker, Popup } from 'react-map-gl';
 import MarkerImg from '../../svg/marker.svg';
+import Form from '../Form/index.js';
 
 const Map = () => {
   const [popupOpen, setPopupOpen] = useState(false);
@@ -93,6 +94,9 @@ const Map = () => {
       </Popup>
     ) : null}
     </ReactMapGL>
+    </section>
+    <section>
+      <Form />
     </section>
     </main>
   );
