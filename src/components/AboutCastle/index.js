@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import fotkaZbenice from '../../images/zbenice-stare-1.jpg';
 import { isBrowser } from '../../utils/browser';
+import fotkaZbenice1 from '../../images/zbenice-old-1.jpg';
+import fotkaZbenice2 from '../../images/zbenice-old-2.jpg';
+import fotkaZbenice3 from '../../images/zbenice-old-3.jpg';
 
 const AboutCastle = () => {
   const [items, setItems] = useState([]);
@@ -63,11 +65,6 @@ const AboutCastle = () => {
             Poslední známý člen rodu Mikuláš Šic je připomínán roku 1650 v
             Drážďanech. Po tomto datu stopa tohoto rodu mizí.
           </p>
-          <img
-            className="introduction__photo"
-            src={fotkaZbenice}
-            alt="Fotka zámku Zbenice"
-          ></img>
         </div>
       </section>
 
@@ -153,6 +150,24 @@ const AboutCastle = () => {
             </p>
           </li>
         </ul>
+      </section>
+
+      <section className="section__all-photos">
+        <img
+          className="section__photo section__photo-first"
+          src={fotkaZbenice1}
+          alt="Historická fotka zámku Zbenice"
+        />
+        <img
+          className="section__photo"
+          src={fotkaZbenice2}
+          alt="Historická fotka zámku Zbenice"
+        ></img>
+        <img
+          className="section__photo"
+          src={fotkaZbenice3}
+          alt="Historická fotka zámku Zbenice"
+        ></img>
       </section>
     </>
   );
