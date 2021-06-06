@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&family=Open+Sans:wght@400;700&family=Pinyon+Script&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&family=Open+Sans:wght@400;700&family=Pinyon+Script&display=swap');
 
 body {
   font-size: $font-size;
@@ -7,12 +7,8 @@ body {
   color: $color-black;
 }
 
-:focus {
+:focus-visible {
   outline: 2px dotted $color-darkred;
-}
-
-a {
-  color: $color-white;
 }
 
 .container {
@@ -20,6 +16,14 @@ a {
   margin-right: auto;
   margin-left: auto;
   padding: 0 1.25rem;
+
+  &--desktop {
+    @include xl {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      padding: 3rem 0;
+    }
+  }
 }
 
 h1 {
@@ -29,11 +33,18 @@ h1 {
   color: $color-black;
   text-align: center;
   padding: 3rem 0 1rem 0;
+
+  @include xl {
+    text-align: left;
+  }
 }
 
 h2 {
   font-weight: normal;
   font-size: 1.25rem;
+  text-transform: uppercase;
+  font-family: $font-menu;
+  padding-bottom: 1rem;
 }
 
 h3 {
