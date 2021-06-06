@@ -1,11 +1,10 @@
 .introduction {
-  // border-top: solid 1px $color-gold;
   &__photo {
     width: 50%;
     height: auto;
-    padding: 0.5rem;
+    padding: 1rem;
     background-color: $color-gold;
-    margin-left: 25%;
+    margin: 3rem 25%;
   }
 
   &__container {
@@ -13,6 +12,10 @@
     max-width: 75rem;
     margin: 0 auto;
     text-align: center;
+  }
+
+  &__history {
+    text-align: left;
   }
 }
 
@@ -27,7 +30,7 @@
 
 .timeline {
   padding-bottom: 3rem;
-  //timeline__item
+
   &__item {
     list-style-type: none;
     position: relative;
@@ -54,7 +57,7 @@
     }
 
     &:nth-child(even) .timeline__text {
-      left: -29.3rem;
+      left: -27.44rem;
     }
 
     &:nth-child(odd) .timeline__text::before {
@@ -100,6 +103,9 @@
     @include xxl {
       &:nth-child(even) div {
         left: -289px;
+      }
+      &:nth-child(even) .timeline__text {
+        left: -18rem;
       }
     }
 
