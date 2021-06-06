@@ -17,20 +17,10 @@ const Header = () => {
     }
   };
 
-  // const toggleDarkMode = () => {
-  //   setDarkMode(!darkMode);
-  //   if (darkMode === true) {
-  //     document.body.classList.add('dark-mode');
-  //   } else {
-  //     document.body.classList.remove('dark-mode');
-  //   }
-  // };
-
-  //element bude mit class background secondary
-
   return (
     <>
       <header>
+        <p>{`${darkMode}`}</p>
         <div className="mode-switcher">
           <label className="mode__switch--label" htmlFor="mode-switch">
             <input
@@ -43,7 +33,6 @@ const Header = () => {
           </label>
           <IconSun />
         </div>
-
         <div className="header__content">
           <Link to="/">
             <img className="header__logo" src={logo} alt="logo zámku Zbenice" />
@@ -54,7 +43,6 @@ const Header = () => {
             </Link>
           </div>
         </div>
-
         <nav className="header__nav">
           <div className="header__hamburger-items">
             <span className="header__hamburger-text">Menu</span>

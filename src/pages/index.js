@@ -1,6 +1,6 @@
 import * as React from 'react';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
+import Page from '../components/Page';
+
 import Main from '../components/Main';
 
 const IndexPage = () => {
@@ -9,9 +9,9 @@ const IndexPage = () => {
       <a href="#main" className="skip-links">
         Přeskočit na obsah
       </a>
-      <Header />
-      <Main />
-      <Footer />
+      <Page>
+        <Main />
+      </Page>
     </div>
   );
 };

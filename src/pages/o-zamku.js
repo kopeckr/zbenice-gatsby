@@ -1,14 +1,14 @@
 import * as React from 'react';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
+import Page from '../components/Page';
+
 import AboutCastle from '../components/AboutCastle';
 
 const PageOZamku = () => {
   return (
     <>
-      <Header />
-      <AboutCastle />
-      <Footer />
+      <Page>
+        <AboutCastle />
+      </Page>
     </>
   );
 };

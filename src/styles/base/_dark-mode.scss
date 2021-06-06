@@ -37,7 +37,13 @@
   .main__wrapper,
   .main__photos-headline,
   .main__photo-content,
-  .container {
+  .main__section,
+  .container,
+  .timeline {
     background-color: $color-verydark-grey;
+  }
+
+  .toggler:before {
+    transform: translateX(-1.35rem);
   }
 }
