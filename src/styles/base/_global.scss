@@ -13,6 +13,13 @@ a {
   color: $color-white;
 }
 
+.container {
+  max-width: 72rem;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 1.25rem;
+}
+
 h1 {
   font-family: $font-menu;
   font-weight: normal;
@@ -35,3 +42,4 @@ h3 {
   padding-bottom: 1rem;
   padding-top: 1rem;
 }
+
