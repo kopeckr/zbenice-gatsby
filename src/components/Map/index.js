@@ -10,10 +10,38 @@ const Map = () => {
     latitude: 49.59265,
     longitude: 14.08732,
     zoom: 15,
-    // zde si nastavuji stred na mape
   });
   return (
-    <>
+    <main className="container">
+    <section className="contact">
+      <h1>Kontakt</h1>
+      <p className="contact__text">Kde nás najdete?</p>
+      <div className="contact__address">
+        <p>
+          Zámek Zbenice
+          <br />
+          Zbenice 1<br />
+          262 31 Zbenice
+        </p>
+        </div>
+        <div className="contact__details">
+          <a className="contact__link" href="tel:+420 603 542 878">
+            <strong>Tel:</strong> +420 603 542 878
+          </a>
+          <a
+            className="contact__link"
+            href="mailto: jiriceska@seznam.cz"
+          >
+            <strong>E-mail:</strong> jiriceska@seznam.cz
+          </a>
+          <div className="contact__hours">
+            <p className="contact__hours--text"><strong>Otevirací doba:</strong> 10:00-18:00</p>
+            <p className="contact__hours--text"><strong>Vstupné:</strong> dobrovolné</p>
+          </div>
+        </div>
+    </section>
+
+    <section>
     <ReactMapGL
       mapStyle={{
         version: 8,
@@ -65,7 +93,8 @@ const Map = () => {
       </Popup>
     ) : null}
     </ReactMapGL>
-    </>
+    </section>
+    </main>
   );
 }
 

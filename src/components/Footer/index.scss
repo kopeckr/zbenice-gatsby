@@ -83,6 +83,7 @@ footer {
 .footer__link--email {
   border-bottom: 1px solid transparent;
   transition: all ease-in-out 250ms;
+  color: $color-white;
 
   &:hover {
     border-bottom: 1px solid $color-white;
@@ -121,6 +122,7 @@ footer {
 
 .footer__link {
   position: relative;
+  color: $color-white;
 
   &::after {
     content: '';
@@ -159,6 +161,7 @@ footer {
     text-align: center;
     font-size: 0.6rem;
     padding-top: 0.5rem;
+    color: $color-white;
 
     @include xl {
       grid-column: 1 / 3;
