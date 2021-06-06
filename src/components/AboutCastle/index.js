@@ -63,7 +63,11 @@ const AboutCastle = () => {
             Poslední známý člen rodu Mikuláš Šic je připomínán roku 1650 v
             Drážďanech. Po tomto datu stopa tohoto rodu mizí.
           </p>
-          <img className="introduction__photo" src={fotkaZbenice}></img>
+          <img
+            className="introduction__photo"
+            src={fotkaZbenice}
+            alt="Fotka zámku Zbenice"
+          ></img>
         </div>
       </section>
 
