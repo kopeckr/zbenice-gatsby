@@ -1,4 +1,5 @@
 import React from 'react';
+import uvodniFotkaMala from '../../images/zbenice-phone-32.jpg';
 import uvodniFotka from '../../images/zbenice-32.jpg';
 import fotka1 from '../../images/zbenice-55.jpg';
 import fotka2 from '../../images/zbenice-42.jpg';
@@ -11,7 +12,8 @@ const Main = () => {
       <main className="main" id="main">
         <img
           className="main__photo"
-          src={uvodniFotka}
+          // src={uvodniFotka}
+          src={uvodniFotkaMala} srcSet={`${uvodniFotkaMala} 300w, ${uvodniFotka} 1280w`} 
           alt="Fotka zámku Zbenice"
         />
 

@@ -251,6 +251,7 @@ header {
       @include xl {
         background-color: transparent;
         color: $color-very-darkblue;
+        text-decoration: underline;
       }
     }
   }
