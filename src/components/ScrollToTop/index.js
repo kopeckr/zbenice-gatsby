@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Arrow from '../../svg/arrow.svg';
+import { isBrowser } from '../../utils/browser';
 
 const ScrollToTopBtn = () => {
 
@@ -21,7 +22,9 @@ const ScrollToTopBtn = () => {
     });
   };
 
-  window.addEventListener('scroll', toggleVisible);
+  if (!isBrowser) {
+    window.addEventListener('scroll', toggleVisible);
+  }
     
   return (
     <>
