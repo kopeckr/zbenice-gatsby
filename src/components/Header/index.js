@@ -1,35 +1,42 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import IconSun from '../../svg/icon-sun.svg';
 import logo from '../../images/zbenice-logo.png';
 import { Link } from 'gatsby';
 
 const Header = () => {
-  // Check the value of 'dark-mode' key in localstorage
-  const initialDarkMode = localStorage.getItem('dark-mode');
-
-  // If the value is string 'true', darkModeState is boolean true, else boolean false
-  const darkModeState = initialDarkMode === 'true';
-
-  // Set the value to the localstorage
-  localStorage.setItem('dark-mode', darkModeState);
+  // Check the value of 'dark-mode' key in local storage
+  const initialDarkMode = localStorage.getItem('dark-mode') === 'true';
 
   const [open, setOpen] = useState(false);
 
-  // The default state value is darkModeState
-  // This is because if user goes to another page, he needs to get the state from the localstorage
-  const [darkMode, setDarkMode] = useState(darkModeState);
+  // The default state value is initialDarkMode
+  // This is because if user goes to another page, he needs to get the state from the local storage
+  const [darkMode, setDarkModeState] = useState(initialDarkMode);
 
-  const toggleDarkMode = () => {
-    console.log(darkMode);
-    if (darkMode === false) {
+  // Set the dark mode state variable, the corresponding class on the body element and save the
+  // state to the local storage.
+  const setDarkMode = (enable) => {
+    if (enable) {
       document.body.classList.add('dark-mode');
     } else {
       document.body.classList.remove('dark-mode');
     }
 
-    localStorage.setItem('dark-mode', !darkMode);
+    setDarkModeState(enable);
+
+    localStorage.setItem('dark-mode', enable);
+  };
+
+  // Toggle the dark mode state (and call the setDarkMode function that will take care of all the
+  // logic behind).
+  const toggleDarkMode = () => {
     setDarkMode(!darkMode);
   };
+
+  // Make sure that we set the dark mode class on the body element when the page is loaded.
+  useEffect(() => {
+    setDarkMode(darkMode);
+  });
 
   return (
     <>
