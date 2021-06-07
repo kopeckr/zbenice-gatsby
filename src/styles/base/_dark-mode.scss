@@ -1,5 +1,5 @@
 .dark-mode {
-  background-color: $color-very-darkblue;
+  background-color: $color-darker-blue;
   color: $color-darker-white;
 
   a {
@@ -25,11 +25,11 @@
   header,
   footer,
   .header__hamburger--items {
-    background-color: $color-very-darkblue;
+    background-color: $color-darker-blue;
   }
 
   .header__nav--link:hover {
-    background-color: $color-very-darkblue;
+    background-color: $color-darker-blue;
     color: $color-darker-white;
   }
 
@@ -40,7 +40,7 @@
   .main__section,
   .container,
   .timeline {
-    background-color: $color-verydark-grey;
+    background-color: $color-dark-grey;
   }
 
   .toggler:before {
@@ -49,6 +49,6 @@
 
   .skip-links,
   .contact__form--label {
-    color: $color-very-darkblue;
+    color: $color-darker-blue;
   }
 }

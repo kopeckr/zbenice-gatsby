@@ -28,14 +28,14 @@ const codeStyles = {
 const NotFoundPage = () => {
   return (
     <main style={pageStyles}>
-      <title>Not found</title>
-      <h1 style={headingStyles}>Page not found</h1>
+      <title>Nenalezeno</title>
+      <h1 style={headingStyles}>Stránka nebyla nalezena</h1>
       <p style={paragraphStyles}>
-        Sorry{" "}
+        Omlouváme se{" "}
         <span role="img" aria-label="Pensive emoji">
           😔
         </span>{" "}
-        we couldn’t find what you were looking for.
+        obsah nebyl nalezen
         <br />
         {process.env.NODE_ENV === "development" ? (
           <>
@@ -45,7 +45,7 @@ const NotFoundPage = () => {
           </>
         ) : null}
         <br />
-        <Link to="/">Go home</Link>.
+        <Link to="/">Domů</Link>.
       </p>
     </main>
   )

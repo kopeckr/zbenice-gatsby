@@ -73,7 +73,7 @@ header {
 }
 
 .dark-mode header {
-  background-color: $color-very-darkblue;
+  background-color: $color-darker-blue;
   color: $color-white;
 }
 // header uvnitř body
@@ -256,7 +256,7 @@ header {
 
       @include xl {
         background-color: transparent;
-        color: $color-very-darkblue;
+        color: $color-darker-blue;
         text-decoration: underline;
       }
     }

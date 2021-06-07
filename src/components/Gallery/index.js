@@ -9,8 +9,8 @@ import 'lightgallery/scss/lg-thumbnail.scss';
 import lgThumbnail from 'lightgallery/plugins/thumbnail';
 import lgZoom from 'lightgallery/plugins/zoom';
 import lgFullscreen from 'lightgallery/plugins/fullscreen';
-import images from '../../gallery-one.js';
-import imagesTwo from '../../gallery-two.js';
+import images from './gallery-one';
+import imagesTwo from './gallery-two';
 
 const Gallery = () => {
   return (
