@@ -46,4 +46,9 @@
   .toggler:before {
     transform: translateX(-1.35rem);
   }
+
+  .skip-links,
+  .contact__form--label {
+    color: $color-very-darkblue;
+  }
 }

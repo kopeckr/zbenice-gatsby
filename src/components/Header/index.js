@@ -2,10 +2,11 @@ import React, { useState, useEffect } from 'react';
 import IconSun from '../../svg/icon-sun.svg';
 import logo from '../../images/zbenice-logo.png';
 import { Link } from 'gatsby';
+import { isBrowser } from '../../utils/browser';
 
 const Header = () => {
   // Check the value of 'dark-mode' key in local storage
-  const initialDarkMode = localStorage.getItem('dark-mode') === 'true';
+  const initialDarkMode = isBrowser && localStorage.getItem('dark-mode') === 'true';
 
   const [open, setOpen] = useState(false);
 
@@ -24,7 +25,9 @@ const Header = () => {
 
     setDarkModeState(enable);
 
-    localStorage.setItem('dark-mode', enable);
+    if (isBrowser) {
+      localStorage.setItem('dark-mode', enable);
+    }
   };
 
   // Toggle the dark mode state (and call the setDarkMode function that will take care of all the
