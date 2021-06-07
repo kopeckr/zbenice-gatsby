@@ -22,7 +22,7 @@ const ScrollToTopBtn = () => {
     });
   };
 
-  if (!isBrowser) {
+  if (isBrowser) {
     window.addEventListener('scroll', toggleVisible);
   }
     
