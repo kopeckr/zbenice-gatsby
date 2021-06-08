@@ -29,7 +29,6 @@
 
 .timeline {
   padding-bottom: 3rem;
-  padding-top: 3rem;
 
   &__item {
     list-style-type: none;
@@ -68,8 +67,6 @@
 
     &:nth-child(even) .timeline__text::before {
       right: -15px;
-      // right: 23rem;
-
       border-width: 0.5rem 0 0.5rem 1rem;
       border-color: transparent transparent transparent $color-gold;
     }
@@ -108,31 +105,14 @@
       }
       &:nth-child(even) .timeline__text {
         left: -18rem;
-        // left: 3rem;
       }
     }
-
     @include xm {
       margin-left: 20px;
     }
   }
 
-  @include xm {
-    .timeline__text {
-      width: calc(100vw - 91px);
-    }
-    &:nth-child(even) .timeline__text {
-      left: 45px;
-    }
-    &:nth-child(even) .timeline__text::before {
-      left: -15px;
-      border-width: 8px 16px 8px 0;
-      border-color: transparent $color-darkblue transparent transparent;
-    }
-  }
-
-  //timeline__text
-  &__text {
+  .timeline__text {
     position: relative;
     bottom: 0;
     width: 25rem;
@@ -151,14 +131,39 @@
     @include xxl {
       width: 250px;
     }
-
-    .timeline__year {
-      display: block;
-      font-size: 1.2rem;
-      font-weight: bold;
-      margin-bottom: 0.5rem;
+    @include xm {
+      .timeline__text {
+        width: calc(100vw - 91px);
+      }
     }
   }
+}
+
+@include xm {
+  .timeline
+    .timeline__list
+    .timeline__item:nth-child(even)
+    .timeline__text::before {
+    left: -15px;
+    border-width: 8px 16px 8px 0;
+    border-color: transparent $color-gold transparent transparent;
+  }
+
+  .timeline .timeline__list .timeline__item:nth-child(even) .timeline__text {
+    left: 45px;
+  }
+}
+
+.timeline .timeline__list {
+  background: $color-white;
+  padding: 50px 0;
+}
+
+.timeline__year {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
 }
 
 .section__all-photos {
@@ -196,17 +201,5 @@
   .section__photo-first {
     margin: 0;
     max-width: 33.7%;
-  }
-}
-
-@keyframes scaleAnimation {
-  0% {
-    transform: translateX(-50%) scale(1);
-  }
-  50% {
-    transform: translateX(-50%) scale(1.25);
-  }
-  100% {
-    transform: translateX(-50%) scale(1);
   }
 }
