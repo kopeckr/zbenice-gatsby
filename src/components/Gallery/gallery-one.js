@@ -95,7 +95,14 @@ const images = [
     source: './images/zbenice-63.jpg',
     alt: 'Zámek Zbenice',
     author: 'Fotil:MUDr. Ondřej Jeřábek',
-  }    
+  },
+  
+  {
+    id: 15,
+    source: './images/zbenice-46.jpg',
+    alt: 'Zámek Zbenice',
+    author: 'Fotil:MUDr. Ondřej Jeřábek',
+  }   
 ]
 
 export default images;
