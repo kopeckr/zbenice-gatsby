@@ -62,12 +62,12 @@ const Main = () => {
         </div>
 
         <div className="main__photo-section">
-          <h3 className="main__photos-headline">Zámek Zbenice</h3>
+          <h2 className="main__photos-headline">Zámek Zbenice</h2>
           <p className="main__photo-content">
-            Zámek Zbenice vyzařuje jedinečnou atmosféru. Více fotografií
-            naleznete v naší
+            Zámek Zbenice vyzařuje jedinečnou atmosféru, kterou můžete načerpat
+            skrze fotografie z naší
             <Link className="header__nav--link-gallery" to="/galerie">
-              fotogalerii
+              fotogalerie
             </Link>
             .
           </p>

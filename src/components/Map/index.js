@@ -35,7 +35,7 @@ const Map = () => {
             </a>
             <div className="contact__hours">
               <p className="contact__hours--text">
-                <strong>Otevírací doba:</strong> 10:00-18:00
+                <strong>Otevírací doba:</strong> 10:00-18:00 (Po – Pá)
               </p>
               <p className="contact__hours--text">
                 <strong>Vstupné:</strong> dobrovolné

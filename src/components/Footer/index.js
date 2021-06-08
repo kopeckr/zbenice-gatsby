@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import logo from '../../images/zbenice-logo.png';
-import IconPhone from '../../svg/phone-call.svg';
+import IconPhone from '../../svg/icon-phone.svg';
 import IconEmail from '../../svg/icon-email.svg';
 
 const Footer = () => {

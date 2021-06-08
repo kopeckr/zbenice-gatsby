@@ -29,6 +29,7 @@
       &::first-letter {
         font-family: $font-first-letter;
         font-size: 200%;
+        line-height: 0;
       }
     }
 
