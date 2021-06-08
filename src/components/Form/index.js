@@ -30,7 +30,6 @@ const Form = () => {
           <label htmlFor="name" className="contact__form--label">
             Jméno a přijmení
             <input
-              autoFocus
               type="text"
               name="user_name"
               id="name"
