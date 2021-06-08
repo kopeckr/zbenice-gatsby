@@ -1,15 +1,15 @@
 import React from 'react';
 import { Link } from 'gatsby';
 
-import mainPhotoMobile from '../../images/zbenice-phone-32.jpg';
-import mainPhotoDesktop from '../../images/zbenice-32.jpg';
-import photoBottomDesktop1 from '../../images/zbenice-55.jpg';
-import photoBottomDesktop2 from '../../images/zbenice-42.jpg';
-import photoBottomDesktop3 from '../../images/zbenice-52.jpg';
-import photoBottomMobile1 from '../../images/zbenice-phone-55.jpg';
-import photoBottomMobile2 from '../../images/zbenice-phone-42.jpg';
-import photoBottomMobile3 from '../../images/zbenice-phone-52.jpg';
-import photoOwner from '../../images/zbenice-ceska.jpg';
+import mainPhotoMobile from '../../../static/images/zbenice-phone-32.jpg';
+import mainPhotoDesktop from '../../../static/images/zbenice-32.jpg';
+import photoBottomDesktop1 from '../../../static/images/zbenice-55.jpg';
+import photoBottomDesktop2 from '../../../static/images/zbenice-42.jpg';
+import photoBottomDesktop3 from '../../../static/images/zbenice-52.jpg';
+import photoBottomMobile1 from '../../../static/images/zbenice-phone-55.jpg';
+import photoBottomMobile2 from '../../../static/images/zbenice-phone-42.jpg';
+import photoBottomMobile3 from '../../../static/images/zbenice-phone-52.jpg';
+import photoOwner from '../../../static/images/zbenice-ceska.jpg';
 
 const Main = () => {
   return (

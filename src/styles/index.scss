@@ -3,13 +3,13 @@
 
 @import './base/_global.scss';
 @import './base/_reset.scss';
+@import '../styles/base/_dark-mode.scss';
 
 @import '../components/Header/index.scss';
 @import '../components/Footer/index.scss';
 @import '../components/Main/index.scss';
 @import '../components/AboutCastle/index.scss';
 @import '../components/Gallery/index.scss';
-@import '../styles/base/_dark-mode.scss';
 
 @import '../components/Map/index.scss';
 @import '../components/Form/index.scss';

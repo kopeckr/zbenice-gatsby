@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { isBrowser } from '../../utils/browser';
-import fotkaZbenice1 from '../../images/zbenice-old-1.jpg';
-import fotkaZbenice2 from '../../images/zbenice-old-2.jpg';
-import fotkaZbenice3 from '../../images/zbenice-old-3.jpg';
+import fotkaZbenice1 from '../../../static/images/zbenice-old-1.jpg';
+import fotkaZbenice2 from '../../../static/images/zbenice-old-2.jpg';
+import fotkaZbenice3 from '../../../static/images/zbenice-old-3.jpg';
 
 const AboutCastle = () => {
   const [items, setItems] = useState([]);
