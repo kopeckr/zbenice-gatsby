@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Arrow from '../../svg/arrow.svg';
+import Arrow from '../../svg/icon-arrow.svg';
 import { isBrowser } from '../../utils/browser';
 
 const ScrollToTopBtn = () => {

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import 'mapbox-gl/dist/mapbox-gl.css';
 import ReactMapGL, { Marker, Popup } from 'react-map-gl';
-import MarkerImg from '../../svg/marker.svg';
+import MarkerImg from '../../svg/icon-marker.svg';
 import Form from '../Form/index.js';
 
 const Map = () => {

@@ -63,6 +63,9 @@
   display: flex;
   outline: none;
   cursor: pointer;
-}
 
+  &--icon {
+    width: 3rem;
+  }
+}
 
