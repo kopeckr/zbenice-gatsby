@@ -27,15 +27,16 @@ const Form = () => {
       <div className="contact-container">
         <h2>Kontaktní formulář</h2>
         <form className="contact__form" onSubmit={sendEmail}>
-          {/* <input type="hidden" name="contact_number" /> */}
           <label htmlFor="name" className="contact__form--label">
             Jméno a přijmení
             <input
+              autoFocus
               type="text"
               name="user_name"
               id="name"
               className="contact__form--input"
               required
+              placeholder="Napište jméno a příjmení..."
             />
           </label>
 
@@ -47,6 +48,7 @@ const Form = () => {
               id="email"
               className="contact__form--input"
               required
+              placeholder="Napiště adres email..."
             />
           </label>
 
@@ -59,6 +61,7 @@ const Form = () => {
               cols="50"
               className="contact__form--input"
               required
+              placeholder="Napiště vaši zprávu..."
             />
           </label>
           <button type="submit" className="cta">
