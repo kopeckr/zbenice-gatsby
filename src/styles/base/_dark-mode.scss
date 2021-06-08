@@ -24,6 +24,7 @@
 
   header,
   footer,
+  .footer-container,
   .header__hamburger--items {
     background-color: $color-darker-blue;
   }
@@ -33,18 +34,17 @@
     color: $color-darker-white;
   }
 
+  .about-castle-container,
+  .gallery-container,
   .header__nav,
   .main__wrapper,
   .main__photos-headline,
   .main__photo-content,
   .main__section,
-  .container,
-  .timeline {
+  .timeline,
+  .timeline__text,
+  .contact-container {
     background-color: $color-dark-grey;
-  }
-
-  .toggler:before {
-    transform: translateX(-1.35rem);
   }
 
   .skip-links,

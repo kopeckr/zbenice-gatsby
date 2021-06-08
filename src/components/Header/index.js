@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import IconSun from '../../svg/icon-sun.svg';
+import IconMoon from '../../svg/icon-moon.svg';
 import logo from '../../images/zbenice-logo.png';
 import { Link } from 'gatsby';
 import { isBrowser } from '../../utils/browser';
 
 const Header = () => {
   // Check the value of 'dark-mode' key in local storage
-  const initialDarkMode = isBrowser && localStorage.getItem('dark-mode') === 'true';
+  const initialDarkMode =
+    isBrowser && localStorage.getItem('dark-mode') === 'true';
 
   const [open, setOpen] = useState(false);
 
@@ -45,6 +47,7 @@ const Header = () => {
     <>
       <header>
         <div className="mode-switcher">
+          <IconMoon />
           <label className="mode__switch--label" htmlFor="mode-switch">
             <input
               onClick={toggleDarkMode}

@@ -9,6 +9,13 @@
   &__history {
     text-align: left;
     margin-bottom: 3rem;
+
+    &:first-child {
+      &::first-letter {
+        font-family: $font-first-letter;
+        font-size: 200%;
+      }
+    }
   }
 }
 
