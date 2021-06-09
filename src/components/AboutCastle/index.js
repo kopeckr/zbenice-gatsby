@@ -52,18 +52,18 @@ const AboutCastle = () => {
             <div className="introduction__container">
               <h1>O zámku</h1>
               <p className="introduction__history">
-                Historie zámku Zbenice sahá až do 13. století, ale je to až o
-                200 let později, kdy máme první zmínky o rodu Šiců z Drahenic,
-                kteří zámek vlastní. Šicové byli starým vladyckým rodem, který
-                se prvně připomíná počátkem 15. století na Prácheňsku. Pocházeli
-                ze vsi Drahenice a mezi prvními jsou uváděni Jan z Drahenic se
+                Historie zámku Zbenice sahá do 13. století, je to ale až o 200
+                let později, kdy máme první zmínky o rodu Šiců z Drahenic, kteří
+                zámek vlastní. Šicové byli starým vladyckým rodem, který se
+                prvně připomíná počátkem 15. století na Prácheňsku. Pocházeli ze
+                vsi Drahenice a mezi prvními jsou uváděni Jan z Drahenic se
                 svými syny Janem a Albertem. Jan pak vlastní Zalužany a Albert
                 kupuje roku 1453 ves Laszko. Albert později získává od svého
                 bratra Zalužany a od roku 1461 zastává úřad místopurkrabího na
                 Karlštejně. Byl ženatý s Barborou, rozenou ze Všechlap, s kterou
                 měl syna Mikuláše. Z dalších menších statků, které rod vlastnil,
                 lze jmenovat např. Zbenice, Smolety, Suchou, Nedanice atd. Po
-                porážce stavovského povstání na Bílé hoře roku 1620, je rod
+                porážce stavovského povstání na Bílé hoře roku 1620 je rod
                 odsouzen ke ztrátě dvou třetin majetku. Poslední známý člen rodu
                 Mikuláš Šic je připomínán roku 1650 v Drážďanech. Po tomto datu
                 stopa tohoto rodu mizí.

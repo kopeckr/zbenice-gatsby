@@ -8,11 +8,11 @@
 
   &__history {
     text-align: left;
-    margin-bottom: 3rem;
+    margin: 3rem 0;
 
     &::first-letter {
       font-family: $font-first-letter;
-      font-size: 200%;
+      font-size: 350%;
       line-height: 0;
     }
   }

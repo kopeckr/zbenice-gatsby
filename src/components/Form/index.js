@@ -57,14 +57,14 @@ const Form = () => {
         <h2>Kontaktní formulář</h2>
         <form className="contact__form" onSubmit={sendEmail}>
           <label htmlFor="name" className="contact__form--label">
-            Jméno a přijmení
+            Jméno a příjmení
             <input
               type="text"
               name="user_name"
               id="name"
               className="contact__form--input"
               required
-              placeholder="Napište jméno a příjmení..."
+              placeholder="Zadejte jméno a příjmení..."
               value={name}
               onChange={(e) => setName(e.target.value)}
             />
@@ -78,7 +78,7 @@ const Form = () => {
               id="email"
               className="contact__form--input"
               required
-              placeholder="Napište emailovou adresu..."
+              placeholder="Zadejte e-mailovou adresu..."
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
