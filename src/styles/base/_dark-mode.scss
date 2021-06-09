@@ -12,7 +12,8 @@
   .footer__address,
   .footer__nav,
   .footer__copyright--text,
-  .footer__copyright--link {
+  .footer__copyright--link,
+  .message__box  {
     color: $color-darker-white;
   }
 
@@ -26,7 +27,8 @@
   footer,
   .footer-container,
   .header__hamburger--items,
-  .timeline__item {
+  .timeline__item,
+  .message__box {
     background-color: $color-darker-blue;
   }
 

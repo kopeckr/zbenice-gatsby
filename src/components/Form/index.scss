@@ -48,6 +48,7 @@
   font-size: 1rem;
   transition-property: opacity;
   transition-duration: 500ms;
+  font-family: $font-menu;
 
   &.active {
     opacity: 1;
