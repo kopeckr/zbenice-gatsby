@@ -59,7 +59,7 @@ const Form = () => {
               id="email"
               className="contact__form--input"
               required
-              placeholder="Napiště adres email..."
+              placeholder="Napište emailovou adresu..."
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
@@ -74,7 +74,7 @@ const Form = () => {
               cols="50"
               className="contact__form--input"
               required
-              placeholder="Napiště vaši zprávu..."
+              placeholder="Napište vaši zprávu..."
               value={message}
               onChange={(e) => setMessage(e.target.value)}
             />
