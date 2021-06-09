@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Zbenice',
+    title: 'Zámek Zbenice',
   },
   plugins: [
     'gatsby-plugin-sass',
