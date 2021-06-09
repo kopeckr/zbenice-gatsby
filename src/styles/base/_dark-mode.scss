@@ -8,7 +8,6 @@
 
   h1,
   .header__hamburger-text,
-  .contact__form--input,
   .cta,
   .footer__address,
   .footer__nav,
@@ -58,7 +57,8 @@
   }
 
   .skip-links,
-  .contact__form--label {
+  .contact__form--label,
+  .contact__form--input {
     color: $color-darker-blue;
   }
 }
