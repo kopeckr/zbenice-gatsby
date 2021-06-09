@@ -2,14 +2,13 @@ import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
 
 const Form = () => {
-
-  const [name, setName] = useState('')
-  const [email, setEmail] = useState('')
-  const [message, setMessage] = useState('')
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
 
   const sendEmail = (e) => {
     e.preventDefault();
-    
+
     emailjs
       .sendForm(
         'service_test',
@@ -38,14 +37,14 @@ const Form = () => {
         <h2>Kontaktní formulář</h2>
         <form className="contact__form" onSubmit={sendEmail}>
           <label htmlFor="name" className="contact__form--label">
-            Jméno a přijmení
+            Jméno a příjmení
             <input
               type="text"
               name="user_name"
               id="name"
               className="contact__form--input"
               required
-              placeholder="Napište jméno a příjmení..."
+              placeholder="Zadejte jméno a příjmení..."
               value={name}
               onChange={(e) => setName(e.target.value)}
             />
@@ -59,7 +58,7 @@ const Form = () => {
               id="email"
               className="contact__form--input"
               required
-              placeholder="Napište emailovou adresu..."
+              placeholder="Zadejte e-mailovou adresu..."
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
