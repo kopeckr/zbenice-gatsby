@@ -9,8 +9,7 @@ const pageStyles = {
 }
 const headingStyles = {
   marginTop: 0,
-  marginBottom: 64,
-  maxWidth: 320,
+  maxWidth: 600
 }
 
 const paragraphStyles = {
@@ -37,15 +36,10 @@ const NotFoundPage = () => {
         </span>{" "}
         obsah nebyl nalezen
         <br />
-        {process.env.NODE_ENV === "development" ? (
-          <>
-            <br />
-            Try creating a page in <code style={codeStyles}>src/pages/</code>.
-            <br />
-          </>
-        ) : null}
         <br />
+        <p>Zpět na hlavní stránku {' '}
         <Link to="/">Domů</Link>.
+        </p>
       </p>
     </main>
   )
