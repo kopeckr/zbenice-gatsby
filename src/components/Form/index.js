@@ -2,12 +2,25 @@ import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
 
 const Form = () => {
+
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
+  const [popupMessage, setPopUpMessage] = useState(null);
+
+  const showPopUp = (message, hideTimeOut) => {
+    setPopUpMessage(message);
+
+    if (hideTimeOut !== null && hideTimeOut !== undefined) {
+      setTimeout(() => {
+        setPopUpMessage(null);
+      }, hideTimeOut);
+    }
+  };
 
   const sendEmail = (e) => {
     e.preventDefault();
+    showPopUp('Odesilám zprávu...');
 
     emailjs
       .sendForm(
@@ -19,9 +32,13 @@ const Form = () => {
       .then(
         (result) => {
           console.log(result.text);
+          showPopUp('Zpráva byla úspěšně odeslána.', 3000);
+
+          
         },
         (error) => {
           console.log(error.text);
+          showPopUp('Zprávu se nepodařilo odeslat.', 3000);
         },
       )
       .then(() => {
@@ -34,6 +51,9 @@ const Form = () => {
   return (
     <>
       <div className="contact-container">
+        <div className={popupMessage === null ? 'message__box' : 'message__box active'}>
+          {popupMessage}&nbsp;
+        </div>
         <h2>Kontaktní formulář</h2>
         <form className="contact__form" onSubmit={sendEmail}>
           <label htmlFor="name" className="contact__form--label">
