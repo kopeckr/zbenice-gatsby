@@ -161,16 +161,19 @@ const AboutCastle = () => {
               className="section__photo section__photo-first"
               src={fotkaZbenice1}
               alt="Historická fotka zámku Zbenice"
+              loading="lazy"
             />
             <img
               className="section__photo"
               src={fotkaZbenice2}
               alt="Historická fotka zámku Zbenice"
+              loading="lazy"
             ></img>
             <img
               className="section__photo"
               src={fotkaZbenice3}
               alt="Historická fotka zámku Zbenice"
+              loading="lazy"
             ></img>
           </section>
         </main>

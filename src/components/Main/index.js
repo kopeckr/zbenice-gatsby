@@ -20,6 +20,7 @@ const Main = () => {
           src={mainPhotoMobile}
           srcSet={`${mainPhotoMobile} 650w, ${mainPhotoDesktop} 1440w`}
           alt="Fotka zámku Zbenice"
+          loading="lazy"
         />
 
         <div className="main__section">
@@ -77,18 +78,21 @@ const Main = () => {
               src={photoBottomMobile1}
               srcSet={`${photoBottomMobile1} 650w, ${photoBottomDesktop1} 1440w`}
               alt="Fotka zámku Zbenice"
+              loading="lazy"
             />
             <img
               className="main__photos"
               src={photoBottomMobile2}
               srcSet={`${photoBottomMobile2} 650w, ${photoBottomDesktop2} 1440w`}
               alt="Fotka erbu zámku Zbenice"
+              loading="lazy"
             />
             <img
               className="main__photos"
               src={photoBottomMobile3}
               srcSet={`${photoBottomMobile3} 650w, ${photoBottomDesktop3} 1440w`}
               alt="Fotka zámku Zbenice"
+              loading="lazy"
             />
           </div>
         </div>
