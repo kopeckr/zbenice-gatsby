@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { isBrowser } from '../../utils/browser';
-import fotkaZbenice1 from '../../../static/images/zbenice-old-1.jpg';
-import fotkaZbenice2 from '../../../static/images/zbenice-old-2.jpg';
-import fotkaZbenice3 from '../../../static/images/zbenice-old-3.jpg';
-import timeline from './data';
+import historicPhotos from './photos';
+import timeline from './timeline';
 
 const AboutCastle = () => {
   const [items, setItems] = useState([]);
@@ -23,7 +21,7 @@ const AboutCastle = () => {
     return false;
   };
 
-  const callbackFunc = () => {
+  const itemInViewport = () => {
     for (let i = 0; i < items.length; i++) {
       if (isElementInViewport(items[i])) {
         items[i].classList.add('in-view');
@@ -40,8 +38,8 @@ const AboutCastle = () => {
   useEffect(() => {
     if (items.length) {
       console.log(items);
-      window.addEventListener('resize', callbackFunc);
-      window.addEventListener('scroll', callbackFunc);
+      window.addEventListener('resize', itemInViewport);
+      window.addEventListener('scroll', itemInViewport);
     }
   }, [items]);
 
@@ -81,100 +79,25 @@ const AboutCastle = () => {
           <section className="timeline">
             <ul className="timeline__list">
               {timeline.map((item) => (
-                <li className="timeline__item">
+                <li key={item.id} className="timeline__item">
                   <p className="timeline__text">
                     <time className="timeline__year">{item.year}</time>{' '}
                     {item.text}
                   </p>
                 </li>
               ))}
-              {/* <li className="timeline__item">
-                <p className="timeline__text">
-                  <time className="timeline__year">1539</time> Po Janově smrti
-                  zůstává jediným vlastníkem Hynek, který tvrz, dvůr a ves
-                  prodává roku 1539 Jindřichu Opršalovi z Jetřichovic, který měl
-                  za manželku Dorotu z Bolu. Jindřich byl oddaným přívržencem
-                  Jiříka z Poděbrad a účastnil se po jeho boku mnoha bitev.
-                </p>
-              </li>
-              <li className="timeline__item">
-                <p className="timeline__text">
-                  <time className="timeline__year">1547</time> Roku 1547 kupuje
-                  Zbenice Jan Bukovanský z Bukovan a připojil je k Bukovanům.
-                  Při dělení majetku dostává Zbenice Adam Bukovanský, který je
-                  roku 1609 prodal Barboře Vlkové, rozené z Mitrovic. Po ní dědí
-                  Jan Vlk z Kvítkova, ženatý s Johankou Eusebií z Harasova,
-                  který vše prodává Vilému Šléglovskému ze Sicendorfu,
-                  místopísaři království Českého.
-                </p>
-              </li>
-              <li className="timeline__item">
-                <p className="timeline__text">
-                  <time className="timeline__year">1626</time> Ten nechává roku
-                  1626 starou tvrz přestavět na zámek v pozdně renesančním stylu
-                  s malým uzavřeným nádvořím. Po smrti Viléma Šléglovského se
-                  majetku ujímá jeho manželka Alena, rozená ze Střítěže, která
-                  se podruhé vdává za Jindřicha Bynu z Bynu. Posledním držitelem
-                  z tohoto rodu byla Bernarda Bynová, provdaná Čejková.
-                </p>
-              </li>
-              <li className="timeline__item">
-                <p className="timeline__text">
-                  <time className="timeline__year">1754</time> Její syn hrabě
-                  Jan Čejka z Olbramovic prodává Zbenice roku 1754 klášteru sv.
-                  Jana pod Skalou. Po zrušení kláštera roku 1785 kupuje, po
-                  dořešení majetkových převodů, roku 1791 zámek s dvorem Josef
-                  ze Salzburgu. Ten jej však již o tři roky později prodává
-                  Františku Schrenkovi.
-                </p>
-              </li>
-              <li className="timeline__item">
-                <p className="timeline__text">
-                  <time className="timeline__year">1805</time> Od roku 1805 drží
-                  Zbenice Karel Schwarzenberk, který je připojil k orlickému
-                  panství. Schwarzenberkové drží Zbenice až do první pozemkové
-                  reformy v roce 1919. Tehdy se majitelem zámku stává Václav a
-                  Sylvie Váňovi.
-                </p>
-              </li>
-              <li className="timeline__item">
-                <p className="timeline__text">
-                  <time className="timeline__year">1942</time> V roce 1942 zámek
-                  vyhořel. Poté byl provizorně zastřešen a nebyl dlouho
-                  využíván. V dobách, kdy patřilo všechno všem, zámek náleží JZD
-                  Chraštice, což se na něm značně podepsalo.
-                </p>
-              </li>
-              <li className="timeline__item">
-                <p className="timeline__text">
-                  <time className="timeline__year">2007</time> V roce 2007 byl
-                  zakoupen restaurátorem Jiřím Češkou a nyní slouží jako
-                  restaurátorská dílna. Také je využíván k příležitostným
-                  kulturním akcím.
-                </p>
-              </li> */}
             </ul>
           </section>
 
           <section className="section__all-photos">
-            <img
-              className="section__photo section__photo-first"
-              src={fotkaZbenice1}
-              alt="Historická fotka zámku Zbenice"
-              loading="lazy"
-            />
-            <img
-              className="section__photo"
-              src={fotkaZbenice2}
-              alt="Historická fotka zámku Zbenice"
-              loading="lazy"
-            ></img>
-            <img
-              className="section__photo"
-              src={fotkaZbenice3}
-              alt="Historická fotka zámku Zbenice"
-              loading="lazy"
-            ></img>
+            {historicPhotos.map((photo) => (
+              <img
+                className={photo.class}
+                key={photo.id}
+                src={photo.source}
+                alt={photo.alt}
+              ></img>
+            ))}
           </section>
         </main>
       </div>

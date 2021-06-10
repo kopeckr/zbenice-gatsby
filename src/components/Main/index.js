@@ -15,13 +15,13 @@ const Main = () => {
   return (
     <>
       <main className="main" id="main">
-          <img
-            className="main__photo"
-            src={mainPhotoMobile}
-            srcSet={`${mainPhotoMobile} 650w, ${mainPhotoDesktop} 1440w`}
-            alt="Fotka zámku Zbenice"
-            loading="lazy"
-          />
+        <img
+          className="main__photo"
+          src={mainPhotoMobile}
+          srcSet={`${mainPhotoMobile} 650w, ${mainPhotoDesktop} 1440w`}
+          alt="Fotka zámku Zbenice"
+          loading="lazy"
+        />
         <div className="main__section">
           <div className="container">
             <div className="main__wrapper">

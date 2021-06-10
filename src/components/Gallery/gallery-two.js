@@ -102,7 +102,7 @@ const imagesTwo = [
     source: './images/zbenice-76.jpg',
     alt: 'Zámek Zbenice - expozice',
     author: 'Fotil:MUDr. Ondřej Jeřábek',
-  }  
-]
+  },
+];
 
 export default imagesTwo;

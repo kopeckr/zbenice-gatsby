@@ -91,3 +91,29 @@ const Footer = () => {
 };
 
 export default Footer;
+
+{
+  /* <section className="timeline">
+<ul className="timeline__list">
+  {timeline.map((item) => (
+    <li key={item.id} className="timeline__item">
+      <p className="timeline__text">
+        <time className="timeline__year">{item.year}</time>
+        {item.text}
+      </p>
+    </li>
+  ))}
+</ul>
+</section>
+
+<section className="section__all-photos">
+{historicPhotos.map((photo) => (
+  <img
+    key={photo.id}
+    src={photo.source}
+    alt={photo.alt}
+    className={photo.class}
+  ></img>
+))}
+</section> */
+}
