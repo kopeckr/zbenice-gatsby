@@ -40,6 +40,10 @@
     }
   }
 
+  &__section {
+    margin-bottom: 3rem;
+  }
+
   &__wrapper {
     display: flex;
     flex-direction: column;
@@ -88,7 +92,6 @@
     height: auto;
     border: 1px solid $color-gold;
     order: 1;
-
     max-width: 40vh;
     object-fit: cover;
   }
