@@ -97,6 +97,7 @@
     display: block;
     transform: scale(1);
     transition: all ease-in-out 500ms;
+    max-height: 50vh;
 
     &:hover {
       transform: scale(1.2);
