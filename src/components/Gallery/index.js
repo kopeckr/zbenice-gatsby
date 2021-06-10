@@ -74,7 +74,7 @@ const Gallery = () => {
         <section className="gallery__bottom">
           <h2>Expozice na Zámku Zbenice</h2>
           <p>
-            V naší sbírce najdete přibližně 200 let stáre kousky, mimo jiné
+            V naší sbírce najdete přibližně 200 let staré kousky, mimo jiné
             první vydání Dějin Českého národa od Františka Palackého nebo
             kojeneckou lahvičku z 19. století.
           </p>

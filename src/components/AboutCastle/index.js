@@ -66,7 +66,7 @@ const AboutCastle = () => {
                 porážce stavovského povstání na Bílé hoře roku 1620 je rod
                 odsouzen ke ztrátě dvou třetin majetku. Poslední známý člen rodu
                 Mikuláš Šic je připomínán roku 1650 v Drážďanech. Po tomto datu
-                stopa tohoto rodu mizí.
+                stopa rodu mizí.
               </p>
             </div>
           </section>
@@ -103,7 +103,7 @@ const AboutCastle = () => {
                   Zbenice Jan Bukovanský z Bukovan a připojil je k Bukovanům.
                   Při dělení majetku dostává Zbenice Adam Bukovanský, který je
                   roku 1609 prodal Barboře Vlkové, rozené z Mitrovic. Po ní dědí
-                  Jan Vlk z Kvítkova / ženatý s Johankou Eusebií z Harasova /,
+                  Jan Vlk z Kvítkova, ženatý s Johankou Eusebií z Harasova,
                   který vše prodává Vilému Šléglovskému ze Sicendorfu,
                   místopísaři království Českého.
                 </p>
@@ -124,7 +124,7 @@ const AboutCastle = () => {
                   Jan Čejka z Olbramovic prodává Zbenice roku 1754 klášteru sv.
                   Jana pod Skalou. Po zrušení kláštera roku 1785 kupuje, po
                   dořešení majetkových převodů, roku 1791 zámek s dvorem Josef
-                  ze Salzburgu. Ten jej však již o tři roky později prodal
+                  ze Salzburgu. Ten jej však již o tři roky později prodává
                   Františku Schrenkovi.
                 </p>
               </li>
@@ -134,21 +134,21 @@ const AboutCastle = () => {
                   Zbenice Karel Schwarzenberk, který je připojil k orlickému
                   panství. Schwarzenberkové drží Zbenice až do první pozemkové
                   reformy v roce 1919. Tehdy se majitelem zámku stává Václav a
-                  Sylvie Váńovi.
+                  Sylvie Váňovi.
                 </p>
               </li>
               <li className="timeline__item">
                 <p className="timeline__text">
                   <time className="timeline__year">1942</time> V roce 1942 zámek
-                  vyhořel. Po té byl provizorně zastřešen a nebyl dlouho
-                  využíván. V dobách kdy patřilo všechno všem zámek náleží JZD
-                  Chraštice,což se na něm značně podepsalo.
+                  vyhořel. Poté byl provizorně zastřešen a nebyl dlouho
+                  využíván. V dobách, kdy patřilo všechno všem, zámek náleží JZD
+                  Chraštice, což se na něm značně podepsalo.
                 </p>
               </li>
               <li className="timeline__item">
                 <p className="timeline__text">
                   <time className="timeline__year">2007</time> V roce 2007 byl
-                  zakoupen restaurátorem Jiřím Češkou, nyní slouží jako
+                  zakoupen restaurátorem Jiřím Češkou a nyní slouží jako
                   restaurátorská dílna. Také je využíván k příležitostným
                   kulturním akcím.
                 </p>
