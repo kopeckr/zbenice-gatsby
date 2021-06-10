@@ -3,6 +3,7 @@ import { isBrowser } from '../../utils/browser';
 import fotkaZbenice1 from '../../../static/images/zbenice-old-1.jpg';
 import fotkaZbenice2 from '../../../static/images/zbenice-old-2.jpg';
 import fotkaZbenice3 from '../../../static/images/zbenice-old-3.jpg';
+import timeline from './data';
 
 const AboutCastle = () => {
   const [items, setItems] = useState([]);
@@ -79,16 +80,15 @@ const AboutCastle = () => {
 
           <section className="timeline">
             <ul className="timeline__list">
-              <li className="timeline__item">
-                <p className="timeline__text">
-                  <time className="timeline__year">1293</time> Ves Zbenice se
-                  poprvé připomíná v souvislosti s bratry Hronem a Dětmarem ze
-                  Zbenic, kteří roku 1293 vlastní zdejší statek. Jejich potomci
-                  vlastní Zbenice až do roku 1510, kdy jsou zde již zmiňováni
-                  bratři Hynek a Jan Šicové z Drahenic.
-                </p>
-              </li>
-              <li className="timeline__item">
+              {timeline.map((item) => (
+                <li className="timeline__item">
+                  <p className="timeline__text">
+                    <time className="timeline__year">{item.year}</time>{' '}
+                    {item.text}
+                  </p>
+                </li>
+              ))}
+              {/* <li className="timeline__item">
                 <p className="timeline__text">
                   <time className="timeline__year">1539</time> Po Janově smrti
                   zůstává jediným vlastníkem Hynek, který tvrz, dvůr a ves
@@ -152,7 +152,7 @@ const AboutCastle = () => {
                   restaurátorská dílna. Také je využíván k příležitostným
                   kulturním akcím.
                 </p>
-              </li>
+              </li> */}
             </ul>
           </section>
 
