@@ -1,5 +1,13 @@
 // media query
 
+$xm: 37.5em;
+
+@mixin xm {
+  @media screen and(min-width: $xm) {
+    @content;
+  }
+}
+
 $xl: 52.5em;
 
 @mixin xl {
@@ -11,15 +19,7 @@ $xl: 52.5em;
 $xxl: 56.25em;
 
 @mixin xxl {
-  @media screen and(max-width: $xxl) {
-    @content;
-  }
-}
-
-$xm: 37.5em;
-
-@mixin xm {
-  @media screen and(max-width: $xm) {
+  @media screen and(min-width: $xxl) {
     @content;
   }
 }
