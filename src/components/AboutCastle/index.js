@@ -37,7 +37,6 @@ const AboutCastle = () => {
 
   useEffect(() => {
     if (items.length) {
-      console.log(items);
       window.addEventListener('resize', itemInViewport);
       window.addEventListener('scroll', itemInViewport);
     }
