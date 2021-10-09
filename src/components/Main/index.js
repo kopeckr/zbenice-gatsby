@@ -1,15 +1,12 @@
 import React from 'react';
 import { Link } from 'gatsby';
 
-import mainPhotoMobile from '../../../static/images/zbenice-phone-32.jpg';
-import mainPhotoDesktop from '../../../static/images/zbenice-32.jpg';
-import photoBottomDesktop1 from '../../../static/images/zbenice-55.jpg';
-import photoBottomDesktop2 from '../../../static/images/zbenice-42.jpg';
-import photoBottomDesktop3 from '../../../static/images/zbenice-52.jpg';
-import photoBottomMobile1 from '../../../static/images/zbenice-phone-55.jpg';
-import photoBottomMobile2 from '../../../static/images/zbenice-phone-42.jpg';
-import photoBottomMobile3 from '../../../static/images/zbenice-phone-52.jpg';
-import photoOwner from '../../../static/images/zbenice-ceska.jpg';
+import mainPhotoMobile from '../../../static/images/zbenice-phone-32.webp';
+import mainPhotoDesktop from '../../../static/images/zbenice-32.webp';
+import photoBottom1 from '../../../static/images/zbenice-55.webp';
+import photoBottom2 from '../../../static/images/zbenice-42.webp';
+import photoBottom3 from '../../../static/images/zbenice-52.webp';
+import photoOwner from '../../../static/images/zbenice-ceska.webp';
 
 const Main = () => {
   return (
@@ -17,7 +14,7 @@ const Main = () => {
       <main className="main" id="main">
           <img
             className="main__photo"
-            src={mainPhotoMobile}
+            src={mainPhotoDesktop}
             srcSet={`${mainPhotoMobile} 650w, ${mainPhotoDesktop} 1440w`}
             alt="Fotka zámku Zbenice"
             loading="lazy"
@@ -75,8 +72,7 @@ const Main = () => {
             <div className="main__photos--wrapper">
               <img
                 className="main__photos main__photos-first"
-                src={photoBottomMobile1}
-                srcSet={`${photoBottomMobile1} 650w, ${photoBottomDesktop1} 1440w`}
+                src={photoBottom1}
                 alt="Fotka zámku Zbenice"
                 loading="lazy"
               />
@@ -85,8 +81,7 @@ const Main = () => {
             <div className="main__photos--wrapper">
               <img
                 className="main__photos"
-                src={photoBottomMobile2}
-                srcSet={`${photoBottomMobile2} 650w, ${photoBottomDesktop2} 1440w`}
+                src={photoBottom2}
                 alt="Fotka erbu zámku Zbenice"
                 loading="lazy"
               />
@@ -95,8 +90,7 @@ const Main = () => {
             <div className="main__photos--wrapper">
               <img
                 className="main__photos"
-                src={photoBottomMobile3}
-                srcSet={`${photoBottomMobile3} 650w, ${photoBottomDesktop3} 1440w`}
+                src={photoBottom3}
                 alt="Fotka zámku Zbenice"
                 loading="lazy"
               />
