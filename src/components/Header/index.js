@@ -75,7 +75,7 @@ const Header = () => {
             <span className="header__hamburger-text">Menu</span>
             <button
               className={
-                open === false
+                !open
                   ? 'header__hamburger--btn'
                   : 'header__hamburger--btn header__hamburger--btn--opened'
               }
@@ -93,7 +93,7 @@ const Header = () => {
           </div>
           <ul
             className={
-              open === false
+              !open
                 ? 'header__nav--list header__nav--closed'
                 : 'header__nav--list'
             }

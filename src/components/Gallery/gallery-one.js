@@ -24,35 +24,35 @@ const images = [
     id: 4,
     source: './images/zbenice-31.jpg',
     alt: 'Zámek Zbenice',
-    author: 'Fotil:MUDr. Ondřej Jeřábek',
+    author: 'Fotil: MUDr. Ondřej Jeřábek',
   },
 
   {
     id: 5,
     source: './images/zbenice-33.jpg',
     alt: 'Zámek Zbenice',
-    author: 'Fotil:MUDr. Ondřej Jeřábek',
+    author: 'Fotil: MUDr. Ondřej Jeřábek',
   },
 
   {
     id: 6,
     source: './images/zbenice-36.jpg',
     alt: 'Zámek Zbenice',
-    author: 'Fotil:MUDr. Ondřej Jeřábek',
+    author: 'Fotil: MUDr. Ondřej Jeřábek',
   },
 
   {
     id: 7,
     source: './images/zbenice-37.jpg',
     alt: 'Zámek Zbenice',
-    author: 'Fotil:MUDr. Ondřej Jeřábek',
+    author: 'Fotil: MUDr. Ondřej Jeřábek',
   },
 
   {
     id: 8,
     source: './images/zbenice-39.jpg',
     alt: 'Zámek Zbenice',
-    author: 'Fotil:MUDr. Ondřej Jeřábek',
+    author: 'Fotil: MUDr. Ondřej Jeřábek',
   },
 
   {
@@ -80,29 +80,29 @@ const images = [
     id: 12,
     source: './images/zbenice-55.jpg',
     alt: 'Zámek Zbenice',
-    author: 'Fotil:MUDr. Ondřej Jeřábek',
+    author: 'Fotil: MUDr. Ondřej Jeřábek',
   },
 
   {
     id: 13,
     source: './images/zbenice-58.jpg',
     alt: 'Zámek Zbenice',
-    author: 'Fotil:MUDr. Ondřej Jeřábek',
+    author: 'Fotil: MUDr. Ondřej Jeřábek',
   },
 
   {
     id: 14,
     source: './images/zbenice-63.jpg',
     alt: 'Zámek Zbenice',
-    author: 'Fotil:MUDr. Ondřej Jeřábek',
+    author: 'Fotil: MUDr. Ondřej Jeřábek',
   },
-  
+
   {
     id: 15,
     source: './images/zbenice-46.jpg',
     alt: 'Zámek Zbenice',
-    author: 'Fotil:MUDr. Ondřej Jeřábek',
-  }   
-]
+    author: 'Fotil: MUDr. Ondřej Jeřábek',
+  },
+];
 
 export default images;
