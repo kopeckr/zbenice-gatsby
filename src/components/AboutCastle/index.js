@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { isBrowser } from '../../utils/browser';
+import coatsOfArms from './coats-of-arms';
 import historicPhotos from './photos';
 import timeline from './timeline';
 
@@ -66,6 +67,19 @@ const AboutCastle = () => {
                 Mikuláš Šic je připomínán roku 1650 v Drážďanech. Po tomto datu
                 stopa rodu mizí.
               </p>
+            </div>
+          </section>
+
+          <section className="house">
+            <div className="house__coat-of-arms">
+              {coatsOfArms.map((photo) => (
+                <img
+                  className={photo.class}
+                  key={photo.id}
+                  src={photo.source}
+                  alt={photo.alt}
+                ></img>
+              ))}
             </div>
           </section>
 
