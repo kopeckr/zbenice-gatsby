@@ -7,13 +7,13 @@ const coatsOfArms = [
   // },
   {
     id: 2,
-    source: '/images/coat-of-arms-oprsalove',
+    source: './images/coat-of-arms-oprsalove.png',
     alt: 'Erb Opršalové z Jetřichovic',
     class: 'house__coat-of-arms',
   },
   {
     id: 3,
-    source: '/images/coat-of-arms-bukovansti',
+    source: './images/coat-of-arms-bukovansti.png',
     alt: 'Erb Bukovanští z Bukovan',
     class: 'house__coat-of-arms',
   },
@@ -25,13 +25,13 @@ const coatsOfArms = [
   // },
   {
     id: 5,
-    source: '/images/coat-of-arms-cejkove',
+    source: './images/coat-of-arms-cejkove.png',
     alt: 'Erb Čejkové z Olbramovic',
     class: 'house__coat-of-arms',
   },
   {
     id: 6,
-    source: '/images/coat-of-arms-schwarzenberkove',
+    source: './images/coat-of-arms-schwarzenberkove.png',
     alt: 'Erb Schwarzenberkové',
     class: 'house__coat-of-arms',
   },

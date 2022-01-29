@@ -1,12 +1,12 @@
 import React from 'react';
 import { Link } from 'gatsby';
 
-import mainPhotoMobile from '../../../static/images/zbenice-phone-32.webp';
-import mainPhotoDesktop from '../../../static/images/zbenice-32.webp';
-import photoBottom1 from '../../../static/images/zbenice-55.webp';
-import photoBottom2 from '../../../static/images/zbenice-42.webp';
-import photoBottom3 from '../../../static/images/zbenice-52.webp';
-import photoOwner from '../../../static/images/zbenice-ceska.webp';
+import mainPhotoMobile from '../../../static/images/zbenice-phone-32.jpg';
+import mainPhotoDesktop from '../../../static/images/zbenice-32.jpg';
+import photoBottom1 from '../../../static/images/zbenice-55.jpg';
+import photoBottom2 from '../../../static/images/zbenice-42.jpg';
+import photoBottom3 from '../../../static/images/zbenice-52.jpg';
+import photoOwner from '../../../static/images/zbenice-ceska.jpg';
 
 const Main = () => {
   return (

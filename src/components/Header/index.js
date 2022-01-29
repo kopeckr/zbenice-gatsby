@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import IconSun from '../../svg/icon-sun.svg';
 import IconMoon from '../../svg/icon-moon.svg';
-import logo from '../../../static/images/zbenice-logo.webp';
+import logo from '../../../static/images/zbenice-logo.png';
 import { Link } from 'gatsby';
 import { isBrowser } from '../../utils/browser';
 
