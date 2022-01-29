@@ -58,6 +58,18 @@ const Main = () => {
           </div>
         </div>
 
+        <div className="main__video">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/swYNGkCwW0E"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+        </div>
+
         <div className="main__photo-section">
           <h2 className="main__photos-headline">Zámek Zbenice</h2>
           <p className="main__photo-content">

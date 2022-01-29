@@ -76,6 +76,12 @@ input:checked + .toggler {
 header {
   background-color: $color-darkblue;
   color: $color-white;
+  background-image: none;
+  background-repeat: no-repeat;
+
+  @include bp-max {
+    background-position: 6% -16%;
+  }
 }
 
 .dark-mode header {
@@ -90,13 +96,15 @@ header {
   align-items: center;
   padding-bottom: 1.25rem;
   padding-top: 2.5rem;
+  background-repeat: no-repeat;
 
-  @include xl {
+  @include bp-max {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-bottom: 1.25rem;
     padding-top: 0;
+    background-position: 95% 14%;
   }
 }
 
@@ -120,6 +128,10 @@ header {
   align-items: center;
   padding-top: 1.25rem;
 
+  @include bp-max {
+    display: block;
+  }
+
   &--text {
     text-transform: uppercase;
     font-family: $font-menu;
@@ -138,6 +150,10 @@ header {
     height: 2px;
     background-color: $color-gold;
     flex-grow: 1;
+
+    @include bp-max {
+      display: none;
+    }
   }
 
   &::after {
@@ -146,6 +162,10 @@ header {
     height: 2px;
     background-color: $color-gold;
     flex-grow: 1;
+
+    @include bp-max {
+      display: none;
+    }
   }
 }
 

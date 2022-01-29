@@ -23,3 +23,11 @@ $xxl: 56.25em;
     @content;
   }
 }
+
+$bp-max: 1600px;
+
+@mixin bp-max {
+  @media screen and(min-width: $bp-max) {
+    @content;
+  }
+}

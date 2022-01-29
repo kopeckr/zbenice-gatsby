@@ -29,7 +29,7 @@
 }
 
 .house {
-  padding-bottom: 3rem;
+  padding-bottom: 5rem;
   width: 90%;
   max-width: 75rem;
   margin: 0 auto;
@@ -207,5 +207,30 @@
   .section__photo-first {
     margin: 0;
     max-width: 33.7%;
+  }
+}
+
+.house__coat-of-arms {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  place-items: center;
+  gap: 1rem;
+
+  & img {
+    width: 100px;
+    height: auto;
+  }
+}
+
+@supports not (gap: 1rem) {
+  .house__coat-of-arms {
+    margin: 1rem;
+  }
+}
+
+.house__coat-of-arms img {
+  &:hover {
+    content: 'test';
+    cursor: pointer;
   }
 }

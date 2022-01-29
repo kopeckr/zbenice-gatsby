@@ -118,6 +118,13 @@
     padding-bottom: 0.8rem;
     background-color: $color-white;
   }
+
+  &__video {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2rem 3rem 2rem;
+  }
 }
 
 /* main desktop version */
