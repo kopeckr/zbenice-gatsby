@@ -3,6 +3,8 @@ import { Link } from 'gatsby';
 
 import mainPhotoMobile from '../../../static/images/zbenice-phone-32.jpg';
 import mainPhotoDesktop from '../../../static/images/zbenice-32.jpg';
+import mainPhotoMobileWebp from '../../../static/images/zbenice-phone-32.webp';
+import mainPhotoDesktopWebp from '../../../static/images/zbenice-32.webp';
 import photoBottom1 from '../../../static/images/zbenice-55.jpg';
 import photoBottom2 from '../../../static/images/zbenice-42.jpg';
 import photoBottom3 from '../../../static/images/zbenice-52.jpg';
@@ -12,13 +14,28 @@ const Main = () => {
   return (
     <>
       <main className="main" id="main">
-        <img
+        {/* <img
           className="main__photo"
           src={mainPhotoMobile}
           srcSet={`${mainPhotoMobile} 650w, ${mainPhotoDesktop} 1440w`}
           alt="Fotka zámku Zbenice"
           loading="lazy"
-        />
+        /> */}
+        <picture>
+          <source
+            srcSet={`${mainPhotoMobileWebp} 650w, ${mainPhotoDesktopWebp} 1440w`}
+            type="image/webp"
+          />
+          <source
+            srcSet={`${mainPhotoMobile} 650w, ${mainPhotoDesktop} 1440w`}
+            type="image/jpg"
+          />
+          <img
+            className="main__photo"
+            src={mainPhotoMobile}
+            alt="Fotka zámku Zbenice"
+          />
+        </picture>
         <div className="main__section">
           <div className="container">
             <div className="main__wrapper">
@@ -55,19 +72,16 @@ const Main = () => {
                 </div>
               </div>
             </div>
+            <div className="main__video">
+              <iframe
+                src="https://www.youtube.com/embed/swYNGkCwW0E"
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            </div>
           </div>
-        </div>
-
-        <div className="main__video">
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/swYNGkCwW0E"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
         </div>
 
         <div className="main__photo-section">

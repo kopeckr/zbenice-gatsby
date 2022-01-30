@@ -76,12 +76,6 @@ input:checked + .toggler {
 header {
   background-color: $color-darkblue;
   color: $color-white;
-  background-image: none;
-  background-repeat: no-repeat;
-
-  @include bp-max {
-    background-position: 6% -16%;
-  }
 }
 
 .dark-mode header {
@@ -96,7 +90,6 @@ header {
   align-items: center;
   padding-bottom: 1.25rem;
   padding-top: 2.5rem;
-  background-repeat: no-repeat;
 
   @include bp-max {
     display: flex;
@@ -104,7 +97,6 @@ header {
     align-items: center;
     padding-bottom: 1.25rem;
     padding-top: 0;
-    background-position: 95% 14%;
   }
 }
 
@@ -126,10 +118,11 @@ header {
   display: flex;
   width: 100%;
   align-items: center;
+  justify-content: center;
   padding-top: 1.25rem;
 
   @include bp-max {
-    display: block;
+    height: 5rem;
   }
 
   &--text {
@@ -152,7 +145,11 @@ header {
     flex-grow: 1;
 
     @include bp-max {
-      display: none;
+      content: url('/images/halapartna-1.png');
+      background-color: transparent;
+      flex-grow: unset;
+      width: auto;
+      height: auto;
     }
   }
 
@@ -164,7 +161,11 @@ header {
     flex-grow: 1;
 
     @include bp-max {
-      display: none;
+      content: url('/images/halapartna-2.png');
+      background-color: transparent;
+      flex-grow: unset;
+      width: auto;
+      height: auto;
     }
   }
 }

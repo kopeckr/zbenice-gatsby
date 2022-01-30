@@ -24,7 +24,7 @@ $xxl: 56.25em;
   }
 }
 
-$bp-max: 1600px;
+$bp-max: 90em;
 
 @mixin bp-max {
   @media screen and(min-width: $bp-max) {

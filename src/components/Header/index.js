@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 import IconSun from '../../svg/icon-sun.svg';
 import IconMoon from '../../svg/icon-moon.svg';
 import logo from '../../../static/images/zbenice-logo.png';
-import halapartna1 from '../../../static/images/halapartna-1.png';
-import halapartna2 from '../../../static/images/halapartna-2.png';
+// import halapartna1 from '../../../static/images/halapartna-1.png';
+// import halapartna2 from '../../../static/images/halapartna-2.png';
 import { Link } from 'gatsby';
 import { isBrowser } from '../../utils/browser';
 
@@ -47,7 +47,7 @@ const Header = () => {
 
   return (
     <>
-      <header style={{ backgroundImage: `url(${halapartna1})`}}>
+      <header>
         <div className="mode-switcher">
           <IconMoon />
           <label className="mode__switch--label" htmlFor="mode-switch">
@@ -62,10 +62,7 @@ const Header = () => {
           </label>
           <IconSun />
         </div>
-        <div
-          className="header__content"
-          style={{ backgroundImage: `url(${halapartna2})` }}
-        >
+        <div className="header__content">
           <Link to="/">
             <img className="header__logo" src={logo} alt="logo zámku Zbenice" />
           </Link>

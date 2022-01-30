@@ -54,7 +54,8 @@
   }
 
   &__photo {
-    max-height: 70vh;
+    max-height: 35rem;
+    width: 100%;
     object-fit: cover;
   }
 
@@ -88,7 +89,7 @@
   }
 
   &__photo-ceska {
-    width: 75%;
+    width: 18rem;
     height: auto;
     border: 1px solid $color-gold;
     order: 1;
@@ -123,7 +124,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0 2rem 3rem 2rem;
+    aspect-ratio: 16 / 9;
+    max-width: 50rem;
+    margin: 3rem auto 0;
+
+    iframe {
+      width: 100%;
+      height: 100%;
+    }
   }
 }
 
@@ -138,7 +146,7 @@
     }
 
     &__photo-ceska {
-      max-width: 25%;
+      max-width: 100%;
       height: auto;
       order: 0;
     }
