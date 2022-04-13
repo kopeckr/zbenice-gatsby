@@ -3,6 +3,7 @@ import { isBrowser } from '../../utils/browser';
 import coatsOfArms from './coats-of-arms';
 import historicPhotos from './photos';
 import timeline from './timeline';
+import Modal from '../Modal';
 
 const AboutCastle = () => {
   const [items, setItems] = useState([]);
@@ -82,6 +83,10 @@ const AboutCastle = () => {
               ))}
             </div>
           </section>
+
+        <section className="modal">
+          <Modal />
+        </section>
 
           <section className="intro">
             <div className="intro__container">

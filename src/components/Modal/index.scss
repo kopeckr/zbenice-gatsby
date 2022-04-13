@@ -1,0 +1,64 @@
+.modal {
+  width: 90%;
+  max-width: 75rem;
+  margin: 5rem auto;
+  text-align: center;
+}
+
+.MuiTypography-root.MuiTypography-h6 {
+  color: $color-black;
+  text-transform: uppercase;
+}
+
+.MuiButtonBase-root.MuiButton-root.MuiButton-outlined {
+  display: inline-block;
+  background-color: $color-darkblue;
+  color: $color-white;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border: 1px solid $color-darkblue;
+  transition: background-color ease-in-out 0.3s;
+
+  &:active,
+  &:hover {
+    background-color: $color-white;
+    color: $color-darkblue;
+  }
+
+  &:focus-visible {
+    outline: 1px dotted $color-darkblue;
+    outline-offset: 0.25em;
+  }
+}
+
+.dialog__item {
+  margin-top: 1.5rem;
+  border-bottom: 1px solid $color-darkblue;
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  h4 {
+    color: $color-black;
+  }
+
+  p {
+    padding: 1.5rem 0;
+    color: $color-darkblue;
+  }
+}
+
+.MuiButtonBase-root.MuiButton-textPrimary {
+  color: $color-darkblue;
+
+  &:hover {
+    background-color: $color-white;
+    text-decoration: underline;
+  }
+}

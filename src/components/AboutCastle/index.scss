@@ -29,7 +29,7 @@
 }
 
 .house {
-  padding-bottom: 5rem;
+  padding-bottom: 2rem;
   width: 90%;
   max-width: 75rem;
   margin: 0 auto;
@@ -225,12 +225,5 @@
 @supports not (gap: 1rem) {
   .house__coat-of-arms {
     margin: 1rem;
-  }
-}
-
-.house__coat-of-arms img {
-  &:hover {
-    content: 'test';
-    cursor: pointer;
   }
 }
